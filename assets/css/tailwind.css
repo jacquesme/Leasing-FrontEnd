@@ -1,7 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-
-.heading-1 {
-    @apply text-primary;
+body {
+  @apply font-serif;
 }
+
