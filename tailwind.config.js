@@ -25,6 +25,7 @@ module.exports = {
         grey100: '#F2F2F2',
         grey200: '#C1C1C1',
         grey300: '#747474',
+        green400: '#3BB44A',
         hover: '#852BBD'
       }
 
@@ -35,7 +36,7 @@ module.exports = {
     },
 
     fontFamily: {
-      serif: ['Proxima Nova', 'sans-serif']
+      serif: 'Proxima Nova'
     },
 
     fontSize: {
