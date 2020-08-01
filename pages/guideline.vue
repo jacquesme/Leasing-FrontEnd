@@ -1,95 +1,129 @@
 <template>
-    <div class="container">
-
+    <div class="max-w-screen-xl m-auto px-4 sm:px-10">
+      <!--COLLORS DIV-->
       <h3 class="text-secondary-green400">01. COLORS</h3>
-      <div class="text-secondary-grey300 inline-block ml-10 mt-8 mr-16">
-        <h4 class="text-sm mb-4">Primary colors</h4>
-        <div class="flex">
-          <div>
-            <div class="bg-primary-white border border-black w-12 h-12 ml-4"></div>
-            <p class="text-xs ml-4 mt-5">#FFFFFF</p>
-          </div>
-          <div>
-            <div class="bg-primary-black w-12 h-12 ml-12"></div>
-            <p class="text-xs ml-12 mt-5">#323232</p>
-          </div>
-        </div>
-      </div>
-      <div class="inline-block ml-24">
-        <h4 class="text-sm text-secondary-grey300 mb-5">Accent colors</h4>
-        <div class="flex">
-          <div>
-            <div class="bg-accent-purple w-12 h-12 ml-5"></div>
-            <p class="text-xs ml-4 mt-5">#60198C</p>
-          </div>
-          <div>
-            <div class="bg-accent-blue w-12 h-12 ml-12"></div>
-            <p class="text-xs ml-12 mt-5">#0A386A</p>
+      <div class="primaryAccent grid grid-cols-4">
+
+        <div class="text-secondary-grey300">
+          <h4 class="text-sm">Primary colors</h4>
+          <div class="grid grid-cols-3">
+            <div class="card">
+              <div class="bg-primary-white border border-black w-12 h-12"></div>
+              <div>
+                <span class="text-xs">#FFFFFF</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="bg-primary-black w-12 h-12"></div>
+              <div>
+                <span class="text-xs">#323232</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="ml-10 mt-10 text-secondary-grey300">
-        <h4 class="text-sm mb-4">Secondary colors</h4>
-        <div class="flex justify-between ml-5 w-7/12">
-          <div>
-            <div class="bg-seconday-white100 w-12 h-12 border border-black"></div>
-            <p class="text-xs mt-5">#F9F9F9</p>
-          </div>
-          <div>
-            <div class="bg-secondary-white200 w-12 h-12"></div>
-            <p class="text-xs mt-5">#F8F6F6</p>
-          </div>
-          <div>
-            <div class="bg-secondary-white300 w-12 h-12"></div>
-            <p class="text-xs mt-5">#FFF8F8</p>
-          </div>
-          <div>
-            <div class="bg-secondary-grey100 w-12 h-12"></div>
-            <p class="text-xs mt-5">#F2F2F2</p>
-          </div>
-          <div>
-            <div class="bg-secondary-grey200 w-12 h-12"></div>
-            <p class="text-xs mt-5">#C1C1C1</p>
-          </div>
-          <div>
-            <div class="bg-secondary-grey300 w-12 h-12"></div>
-            <p class="text-xs mt-5">#747474</p>
-          </div>
-          <div>
-            <div class="bg-secondary-hover w-12 h-12"></div>
-            <p class="text-xs mt-5">#852BBD</p>
+        <div class="text-secondary-grey300">
+          <h4 class="text-sm">Accent colors</h4>
+          <div class="grid grid-cols-3">
+            <div class="card">
+              <div class="bg-accent-purple w-12 h-12"></div>
+              <div>
+                <span class="text-xs">#60198C</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="bg-accent-blue w-12 h-12"></div>
+              <div>
+                <span class="text-xs">#0A386A</span>
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
 
-      <h3 class="text-secondary-green400 mt-20 mb-8">02. FONTS</h3>
-      <div class="ml-10 text-secondary-grey300">
-        <div class="flex">
-          <div class="mr-64">
-            <p class="text-sm mb-2">Heading 1</p>
-            <h1 class="text-2xl ml-4">HEADING 1</h1>
-            <p class="text-sm mt-4 mb-2">Heading 2</p>
-            <h2 class="text-xl ml-4">HEADING 2</h2>
-            <p class="text-sm mt-4 mb-2">Heading 3</p>
-            <h3 class="text-m ml-4">HEADING 3</h3>
-            <p class="text-sm mt-4 mb-2">Heading 4</p>
-            <h4 class="text-sm ml-4">HEADING 4</h4>
-          </div>
-          <div class="ml-64">
-            <p class="text-sm mb-2">Caption 1</p>
-            <p class="text-m ml-4">CAPTION 1</p>
-            <p class="text-sm mt-4 mb-2">Caption 2</p>
-            <p class="text-sm ml-4">CAPTION 2</p>
-            <p class="text-sm mt-4 mb-2">Caption 3</p>
-            <p class="text-sm ml-4">CAPTION 3</p>
-            <p class="text-sm mt-4 mb-2">Caption 4</p>
-            <p class="text-xs ml-4">CAPTION 4</p>
-            <p class="text-sm mt-4 mb-2">Caption 5</p>
-            <p class="text-xxs ml-4">CAPTION 5</p>
+      <div class="secondaryColors">
+
+        <div class="text-secondary-grey300">
+          <h4 class="text-sm">Secondary colors</h4>
+          <div class="grid grid-cols-12">
+            <div class="card">
+              <div class="bg-seconday-white100 w-12 h-12 border border-black"></div>
+              <div>
+                <span class="text-xs">#F9F9F9</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="bg-secondary-white200 w-12 h-12"></div>
+              <div>
+                <span class="text-xs">#F8F6F6</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="bg-secondary-white300 w-12 h-12"></div>
+              <div>
+                <span class="text-xs">#FFF8F8</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="bg-secondary-grey100 w-12 h-12"></div>
+              <div>
+                <span class="text-xs">#F2F2F2</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="bg-secondary-grey200 w-12 h-12"></div>
+              <div>
+                <span class="text-xs">#C1C1C1</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="bg-secondary-grey300 w-12 h-12"></div>
+              <div>
+                <span class="text-xs">#747474</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="bg-secondary-hover w-12 h-12"></div>
+              <div>
+                <span class="text-xs">#852BBD</span>
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
 
+
+      <!--FONTS DIV-->
+      <h3 class="text-secondary-green400">02. FONTS</h3>
+      <div class="text-secondary-grey300 grid grid-cols-2 gap-32">
+
+          <div class="">
+            <p class="text-sm">Heading 1</p>
+            <h1 class="text-2xl">HEADING 1</h1>
+            <p class="text-sm">Heading 2</p>
+            <h2 class="text-xl">HEADING 2</h2>
+            <p class="text-sm">Heading 3</p>
+            <h3 class="text-m">HEADING 3</h3>
+            <p class="text-sm">Heading 4</p>
+            <h4 class="text-sm">HEADING 4</h4>
+          </div>
+          <div class="">
+            <p class="text-sm">Caption 1</p>
+            <p class="text-m">CAPTION 1</p>
+            <p class="text-sm">Caption 2</p>
+            <p class="text-sm">CAPTION 2</p>
+            <p class="text-sm">Caption 3</p>
+            <p class="text-sm">CAPTION 3</p>
+            <p class="text-sm">Caption 4</p>
+            <p class="text-xs">CAPTION 4</p>
+            <p class="text-sm">Caption 5</p>
+            <p class="text-xxs">CAPTION 5</p>
+          </div>
+
+      </div>
+
+<!--ACTIVE ELEMENT DIV-->
       <h3 class="text-secondary-green400 mt-20 mb-8">03. ACTIVE ELEMENTS AND STATES</h3>
       <div class="flex text-secondary-grey300">
         <div class="w-6/12">
@@ -121,6 +155,21 @@
       </div>
 
       <div></div>
+
+
+      <!--<div class="text-secondary-grey300 inline-block ml-10 mt-8 mr-16">
+        <h4 class="text-sm mb-4">Primary colors</h4>
+        <div class="flex">
+          <div>
+            <div class="bg-primary-white border border-black w-12 h-12 ml-4"></div>
+            <p class="text-xs ml-4 mt-5">#FFFFFF</p>
+          </div>
+          <div>
+            <div class="bg-primary-black w-12 h-12 ml-12"></div>
+            <p class="text-xs ml-12 mt-5">#323232</p>
+          </div>
+        </div>
+      </div>-->
 
 
 
