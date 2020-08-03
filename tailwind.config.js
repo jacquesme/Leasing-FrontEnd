@@ -8,26 +8,26 @@ module.exports = {
   theme: {
 
     colors: {
-      primary: {
-        white: '#FFFFFF',
-        black: '#323232'
-      },
+
+      white: '#FFFFFF',
+      black: '#323232',
 
       accent: {
+        'purple-light': '#852BBD',
         purple: '#60198C',
         blue: '#0A386A'
       },
 
-      secondary: {
-        white100: '#F9F9F9',
-        white200: '#F8F6F6',
-        white300: '#FFF8F8',
-        grey100: '#F2F2F2',
-        grey200: '#C1C1C1',
-        grey300: '#747474',
-        green400: '#3BB44A',
-        hover: '#852BBD'
-      }
+      grey: {
+        100: '#F9F9F9',
+        200: '#F8F6F6',
+        300: '#FFF8F8',
+        400: '#F2F2F2',
+        500: '#C1C1C1',
+        600: '#747474'
+      },
+
+      'green-400': '#3BB44A'
 
     },
 
