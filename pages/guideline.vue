@@ -4,7 +4,7 @@
       <h3 class="text-green-400">01. COLORS</h3>
       <div class="primaryAccent grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
 
-        <div class="text-secondary-grey300">
+        <div class="text-grey-500">
           <h4 class="text-sm">Primary colors</h4>
           <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3">
             <div class="card">
@@ -21,7 +21,7 @@
             </div>
           </div>
         </div>
-        <div class="text-secondary-grey300">
+        <div class="text-grey-500">
           <h4 class="text-sm">Accent colors</h4>
           <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3">
             <div class="card">
@@ -43,7 +43,7 @@
 
       <div class="secondaryColors">
 
-        <div class="text-secondary-grey300">
+        <div class="text-grey-500">
           <h4 class="text-sm">Secondary colors</h4>
           <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-12">
             <div class="card">
@@ -96,7 +96,7 @@
 
       <!--FONTS DIV-->
       <h3 class="text-green-400">02. FONTS</h3>
-      <div class="text-secondary-grey300 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-7">
+      <div class="text-grey-500 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-7">
 
           <div class="">
             <p class="text-sm">Heading 1</p>
@@ -122,9 +122,9 @@
           </div>
 
       </div>
-      <div class="text-secondary-grey300 grid grid-cols-4 sm:grid-cols-4 md:grid-cols-7">
+      <div class="text-grey-500 grid grid-cols-4 sm:grid-cols-4 md:grid-cols-7">
         <div class="col-span-4 pr-20">
-          <h4 class="text-sm">Main text 4</h4>
+          <h4 class="text-sm">Main text</h4>
           <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan posuere quam id mattis. Donec vel tortor libero. Suspendisse placerat, nibh sit amet tempor accumsan, massa lorem pretium mi, id vestibulum ante tortor porta turpis.</p>
         </div>
         <div class="col-span-2">
@@ -151,16 +151,38 @@
         </div>
       </div>
 
-      <div class="text-secondary-grey300 grid grid-cols-4 sm:grid-cols-4 md:grid-cols-7">
+      <div class="text-grey-500 grid grid-cols-4 sm:grid-cols-4 md:grid-cols-7">
         <div class="col-span-4 pr-20">
-          <h4 class="text-sm">Main text 4</h4>
+          <h4 class="text-sm">Main text mobi</h4>
           <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan posuere quam id mattis. Donec vel tortor libero. Suspendisse placerat, nibh sit amet tempor accumsan, massa lorem pretium mi, id vestibulum ante tortor porta turpis.</p>
         </div>
       </div>
 
 <!--ACTIVE ELEMENT DIV-->
-      <h3 class="text-green-400 mt-20 mb-8">03. ACTIVE ELEMENTS AND STATES</h3>
-
+      <h3 class="text-green-400">03. ACTIVE ELEMENTS AND STATES</h3>
+      <div class="text-grey-500 grid grid-cols-4 sm:grid-cols-4 md:grid-cols-11">
+        <div class="col-span-5">
+          <h4 class="text-sm">Button</h4>
+          <button class="btn btn-purple">More details</button>
+        </div>
+        <div class="col-span-4">
+          <h4 class="text-sm">Checkbox</h4>
+          <div>
+            <label>
+              <input type="checkbox">
+              <span class="text-sm">Chair</span>
+            </label>
+            <label class="ml-4">
+              <input type="checkbox">
+              <span class="text-sm">TV</span>
+            </label>
+          </div>
+        </div>
+        <div class="col-span-2">
+          <h4 class="text-sm">Link</h4>
+          <a class="link" href="#">link</a>
+        </div>
+      </div>
 
 
     </div>

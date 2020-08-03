@@ -10,6 +10,28 @@ body {
   margin-left: 3rem;
 }
 
+.btn {
+  @apply text-m px-6 py-2 rounded cursor-pointer duration-300 transition-colors;
+}
+
+.btn-purple {
+  @apply text-white bg-accent-purple;
+}
+
+.btn-purple:hover {
+  @apply bg-accent-purple-light;
+}
+
+.link {
+  @apply 	underline;
+}
+
+.link:hover {
+  @apply text-accent-purple-light;
+}
+
+
+
 
 
 
