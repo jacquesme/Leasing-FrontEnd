@@ -160,21 +160,23 @@
 
 <!--ACTIVE ELEMENT DIV-->
       <h3 class="text-green-400">03. ACTIVE ELEMENTS AND STATES</h3>
-      <div class="text-grey-500 grid grid-cols-4 sm:grid-cols-4 md:grid-cols-11">
+      <div class="text-grey-500 grid grid-cols-4 sm:grid-cols-4 md:grid-cols-10">
         <div class="col-span-5">
           <h4 class="text-sm">Button</h4>
           <button class="btn btn-purple">More details</button>
         </div>
-        <div class="col-span-4">
+        <div class="col-span-3 sm:col-span-2 md:col-span-3">
           <h4 class="text-sm">Checkbox</h4>
           <div>
             <label>
-              <input type="checkbox">
-              <span class="text-sm">Chair</span>
+              <input type="checkbox" id="checkbox-1" name="checkbox" />
+              <label for="checkbox-1">Checkbox 15</label>
+              <span class="text-sm ml-2">Chair</span>
             </label>
-            <label class="ml-4">
-              <input type="checkbox">
-              <span class="text-sm">TV</span>
+            <label>
+             <input type="checkbox" id="checkbox-2" name="checkbox" />
+              <label for="checkbox-2">Checkbox 15</label>
+              <span class="text-sm ml-2">TV</span>
             </label>
           </div>
         </div>
@@ -183,7 +185,27 @@
           <a class="link" href="#">link</a>
         </div>
       </div>
+      <h4 class="text-sm text-grey-500">Input</h4>
+      <div class="text-grey-500 text-xs grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 lg:grid-cols-5">
 
+        <card class="lg:col-start-1">
+          <input type="text" placeholder="Enter login" class="appearance-none border rounded w-full bg-grey-400 py-2 px-3">
+          <p>Main</p>
+        </card>
+        <card class="lg:col-start-3">
+          <input type="text" placeholder="Join" class="appearance-none border rounded w-full bg-grey-400 py-2 px-3">
+          <p>Fill</p>
+        </card>
+        <card class="lg:col-start-5">
+          <input type="text" placeholder="Jo2ma.com" class="appearance-none border border-red-700 rounded w-full bg-white py-2 px-3">
+          <p>Error</p>
+        </card>
+
+      </div>
 
     </div>
 </template>
+
+<!--
+
+-->
