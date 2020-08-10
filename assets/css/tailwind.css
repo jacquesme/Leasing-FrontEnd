@@ -23,6 +23,13 @@ body {
 }
 
 /*======================
+Heading and Caption
+========================*/
+.heading-style, .caption-style {
+  @apply mt-2 mb-5;
+}
+
+/*======================
 Check Boxes Styles
 ========================*/
 
@@ -85,12 +92,74 @@ input[type='checkbox']#checkbox-2:checked+label {
   background: transparent;
 }
 
+/*-------------------
+  .Link style
+  ------------------*/
 .link {
   @apply 	underline;
 }
 
 .link:hover {
   @apply text-accent-purple-light;
+}
+
+/*-------------------
+  Pagnation style
+  ------------------*/
+.pag-list {
+  @apply inline px-4 py-2 rounded;
+}
+
+.pag-arrow {
+  @apply font-semibold;
+}
+
+.pag-arrow:hover {
+  @apply font-black text-accent-blue;
+}
+
+
+/*-------------------
+  Table style
+  ------------------*/
+table, th, td {
+  @apply border border-solid border-grey-400 text-left;
+}
+
+table {
+  @apply rounded-md shadow-lg;
+}
+
+th, td {
+  @apply px-4 py-2;
+}
+
+th, .td-1 {
+  @apply text-sm text-black font-normal;
+}
+
+.td-2 {
+  @apply text-xs text-black font-normal;
+}
+
+.td-3 {
+  @apply text-xs text-grey-500;
+}
+
+
+/*-------------------
+  Modal style
+  ------------------*/
+.modal-list {
+  @apply bg-white;
+}
+
+.modal-content ul li {
+  @apply mt-4 pl-6;
+}
+
+img {
+  @apply inline-block w-4 h-4 mr-4;
 }
 
 
