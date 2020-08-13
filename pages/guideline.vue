@@ -218,15 +218,15 @@
         <h4 class="text-sm text-grey-500 mb-6">Input</h4>
         <div class="text-grey-500 text-xs grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 lg:grid-cols-5 mb-6">
           <card class="lg:col-start-1">
-            <input type="text" placeholder="Enter login" class="appearance-none border rounded w-full bg-grey-400 py-2 px-3">
+            <input type="text" placeholder="Enter login" class="myInp">
             <p>Main</p>
           </card>
           <card class="lg:col-start-3">
-            <input type="text" placeholder="Join" class="appearance-none border rounded w-full bg-grey-400 py-2 px-3">
+            <input type="text" placeholder="Join" class="myInp">
             <p>Fill</p>
           </card>
           <card class="lg:col-start-5">
-            <input type="text" placeholder="Jo2ma.com" class="appearance-none border border-red-700 rounded w-full bg-white py-2 px-3">
+            <input type="text" placeholder="Jo2ma.com" class="errorInp">
             <p>Error</p>
           </card>
         </div>
@@ -327,6 +327,8 @@
       </div>
     </div>
 </template>
+
+
 
 <!--
 

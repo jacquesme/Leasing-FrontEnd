@@ -1,0 +1,11 @@
+.btn {
+  @apply text-m px-6 py-2 rounded cursor-pointer duration-300 transition-colors;
+}
+
+.btn-purple {
+  @apply text-white bg-accent-purple;
+}
+
+.btn-purple:hover {
+  @apply bg-accent-purple-light;
+}

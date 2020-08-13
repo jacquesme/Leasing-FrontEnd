@@ -10,88 +10,11 @@ body {
   @apply ml-12
 }
 
-.btn {
-  @apply text-m px-6 py-2 rounded cursor-pointer duration-300 transition-colors;
-}
-
-.btn-purple {
-  @apply text-white bg-accent-purple;
-}
-
-.btn-purple:hover {
-  @apply bg-accent-purple-light;
-}
-
 /*======================
 Heading and Caption
 ========================*/
 .heading-style, .caption-style {
   @apply mt-2 mb-5 text-grey-600;
-}
-
-
-
-/*======================
-Check Boxes Styles
-========================*/
-
-input[type='checkbox'] {
-  @apply opacity-0 z-0;
-}
-
-input[type='checkbox']+label {
-  @apply w-6 h-6 inline-block relative box-border border border-solid border-grey-500 cursor-pointer overflow-hidden;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  text-indent: -999px;
-}
-
-/*-------------------
-  #checkbox-1 style
-  ------------------*/
-
-input[type='checkbox']#checkbox-1+label {
-  @apply border border-solid rounded border-grey-500;
-  background: transparent;
-}
-
-input[type='checkbox']#checkbox-1+label:before {
-  content: '';
-  @apply w-3 h-3 top-0 left-0 bottom-0 right-0 absolute opacity-0 z-0 m-auto bg-accent-purple bg-center;
-@include transition(0.4s, ease, all);
-}
-
-input[type='checkbox']#checkbox-1:checked+label:before {
-  @apply opacity-100 z-0;
-}
-
-input[type='checkbox']#checkbox-1:checked+label {
-  @apply border-2 border-solid border-accent-purple rounded;
-  background: transparent;
-}
-
-/*-------------------
-  #checkbox-2 style
-  ------------------*/
-
-input[type='checkbox']#checkbox-2+label {
-  @apply border border-solid rounded border-grey-500;
-  background: transparent;
-}
-
-input[type='checkbox']#checkbox-2+label:before {
-  content: '';
-  @apply w-3 h-3 top-0 left-0 bottom-0 right-0 absolute opacity-0 z-0 m-auto bg-accent-purple bg-center;
-@include transition(0.4s, ease, all);
-}
-
-input[type='checkbox']#checkbox-2:checked+label:before {
-  @apply opacity-100 z-0;
-}
-
-input[type='checkbox']#checkbox-2:checked+label {
-  @apply border-2 border-solid border-accent-purple rounded;
-  background: transparent;
 }
 
 
