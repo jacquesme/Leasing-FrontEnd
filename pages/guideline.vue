@@ -208,14 +208,14 @@
           </div>
 
           <!--Link-->
-          <div class="col-span-2">
+          <div class="col-span-2 mb-6">
             <h4 class="text-sm mb-4">Link</h4>
             <a class="link" href="#">link</a>
           </div>
         </div>
 
         <!--Input-->
-        <h4 class="text-sm text-grey-500">Input</h4>
+        <h4 class="text-sm text-grey-500 mb-6">Input</h4>
         <div class="text-grey-500 text-xs grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 lg:grid-cols-5 mb-6">
           <card class="lg:col-start-1">
             <input type="text" placeholder="Enter login" class="appearance-none border rounded w-full bg-grey-400 py-2 px-3">
@@ -233,7 +233,7 @@
 
         <!--Pagination-->
         <div class="wrapper  mb-12">
-          <h4 class="text-sm text-grey-500">Pagination</h4>
+          <h4 class="text-sm text-grey-500 mb-6">Pagination</h4>
           <nav>
             <ul class="pagination">
               <li class="pag-list bg-grey-100"><a href="" class="pag-arrow"><</a></li>
