@@ -318,7 +318,8 @@
                   <li class="modal-list"><img src="../assets/img/verified.png" alt=""><span><a href="">My purchases</a></span></li>
                   <li class="modal-list"><img src="../assets/img/notification.png" alt=""><span><a href="">My orders</a></span></li>
                   <li class="modal-list"><img src="../assets/img/person.png" alt=""><span><a href="">Personal data</a></span></li>
-                  <li class="mt-6 py-4 bg-grey-400"><span><a href="">Log off</a></span><img class="ml-4" src="../assets/img/log-off.png" alt=""></li>
+                  <li class="mt-6 py-4 bg-grey-400 flex items-center text-grey-600 fill-current"><span><a href="">Log off</a></span>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -327,6 +328,14 @@
       </div>
     </div>
 </template>
+
+<script>
+  import LogOff from '~/assets/svg/log-off.svg?inline';
+
+  export default {
+    components: {LogOff}
+  }
+</script>
 
 
 

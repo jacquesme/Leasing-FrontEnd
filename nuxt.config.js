@@ -33,7 +33,7 @@ export default {
     '@/assets/css/checkbox.css',
     '@/assets/css/button.css'
   ],
-  /*
+  /*  
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
   */
@@ -55,6 +55,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    "@nuxtjs/svg"
   ],
   /*
   ** Build configuration
