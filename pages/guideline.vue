@@ -3,8 +3,8 @@
 
 <!--COLORS DIV-->
 
-      <h3 class="text-green-400">01. COLORS</h3>
-      <div class="ml-8">
+      <h3 class="text-green-400 mt-8">01. COLORS</h3>
+      <div class="grid md:ml-8">
         <div class="primaryAccent grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mt-8 mb-8">
           <!--Primary Colors-->
           <div class="text-grey-500">
@@ -26,7 +26,7 @@
           </div>
 
           <!--Accent Sizes-->
-          <div class="text-grey-500">
+          <div class="grid text-grey-500">
             <h4 class="text-sm">Accent colors</h4>
             <div class="text-grey-600 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3">
               <div class="card">
@@ -103,7 +103,7 @@
 <!--FONTS DIV-->
 
       <h3 class="text-green-400">02. FONTS</h3>
-      <div class="ml-8">
+      <div class="grid md:ml-8">
         <div class="text-grey-500 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-7 mt-8 mb-8">
 
           <!--Heading Sizes-->
@@ -135,7 +135,7 @@
         </div>
 
         <!--Main Text-->
-        <div class="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-7">
+        <div class="sm:grid sm:grid-cols-4 md:grid-cols-7">
           <div class="col-span-4 pr-20">
             <h4 class="text-sm text-grey-500">Main text</h4>
             <p class="text-sm text-grey-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan posuere quam id mattis. Donec vel tortor libero. Suspendisse placerat, nibh sit amet tempor accumsan, massa lorem pretium mi, id vestibulum ante tortor porta turpis.</p>
@@ -143,7 +143,7 @@
 
           <!--Bullet List-->
           <div class="col-span-2">
-            <h4 class="text-sm text-grey-500">Bullet list</h4>
+            <h4 class="mt-4 text-sm text-grey-500">Bullet list</h4>
             <div class="mx-5 mt-4">
               <ul class="text-xs text-grey-600 list-disc ml-2">
                 <li class="mb-2">1st Item</li>
@@ -156,7 +156,7 @@
 
           <!--Numbered List-->
           <div class="col-span-1">
-            <h4 class="text-sm text-grey-500">Numbered list</h4>
+            <h4 class="mt-4 text-sm text-grey-500">Numbered list</h4>
             <div class="mx-5 mt-4">
               <ul class="text-xs text-grey-600 list-decimal ml-2 mb-2">
                 <li class="mb-2">1st Item</li>
@@ -171,7 +171,7 @@
         <!--Mobi-->
         <div class="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-7 mb-16">
           <div class="col-span-4 pr-20">
-            <h4 class="text-sm text-grey-500">Main text mobi</h4>
+            <h4 class="mt-4 text-sm text-grey-500">Main text mobi</h4>
             <p class="text-sm text-grey-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan posuere quam id mattis. Donec vel tortor libero. Suspendisse placerat, nibh sit amet tempor accumsan, massa lorem pretium mi, id vestibulum ante tortor porta turpis.</p>
           </div>
         </div>
@@ -181,7 +181,7 @@
 
       <!--Button / Checkboxes / Link-->
       <h3 class="text-green-400">03. ACTIVE ELEMENTS AND STATES</h3>
-      <div class="ml-8">
+      <div class="grid md:ml-8">
         <div class="text-grey-500 grid grid-cols-4 sm:grid-cols-4 md:grid-cols-10 mt-8">
 
           <!--Button-->
@@ -306,7 +306,7 @@
 <!--POP-UP WINDOW-->
 
       <h3 class="text-green-400">04. POP-UP WINDOW</h3>
-      <div class="ml-8">
+      <div class="grid md:ml-8">
         <div class="text-black text-sm grid grid-cols-6 mt-6 mb-16">
           <div class="col-span-4 sm:col-span-3 md:col-span-2 lg:col-span-1">
             <!--The modal-->

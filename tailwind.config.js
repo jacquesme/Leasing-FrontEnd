@@ -33,7 +33,13 @@ module.exports = {
     },
 
     extend: {
-
+      borderWidth: {
+        '1': '1px'
+      },
+      spacing: {
+        sm: '10px',
+        md: '18px'
+      }
     },
 
     fontFamily: {
@@ -48,6 +54,7 @@ module.exports = {
       'xs': '12px',
       'xxs': '11px'
     }
+
   },
   variants: {},
   plugins: [],
@@ -62,4 +69,5 @@ module.exports = {
       'nuxt.config.js'
     ]
   }
+
 }
