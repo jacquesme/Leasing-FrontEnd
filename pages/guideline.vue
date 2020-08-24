@@ -304,41 +304,54 @@
 
 
 <!--POP-UP WINDOW-->
-
       <h3 class="text-green-400">04. POP-UP WINDOW</h3>
-      <div class="grid md:ml-8">
-        <div class="text-black text-sm grid grid-cols-6 mt-6 mb-16">
-          <div class="col-span-4 sm:col-span-3 md:col-span-2 lg:col-span-1">
-            <!--The modal-->
-            <div class="modal shadow-lg sm:grid-span-2">
-              <!--modal content-->
-              <div class="modal-content">
-                <ul>
-                  <li class="modal-list"><img src="../assets/img/loyalty.png" alt=""><span><a href="">My items</a></span></li>
-                  <li class="modal-list"><img src="../assets/img/verified.png" alt=""><span><a href="">My purchases</a></span></li>
-                  <li class="modal-list"><img src="../assets/img/notification.png" alt=""><span><a href="">My orders</a></span></li>
-                  <li class="modal-list"><img src="../assets/img/person.png" alt=""><span><a href="">Personal data</a></span></li>
-                  <li class="mt-6 py-4 bg-grey-400 flex items-center text-grey-600 fill-current"><span><a href="">Log off</a></span>
-                  </li>
-                </ul>
-              </div>
-            </div>
+      <div class="grid md:ml-8 text-black text-sm mt-6 mb-16">
+          <!--The modal-->
+          <div class="modal sm:grid-span-2">
+            <!--modal content-->
+              <Menu :items="menuItems" :logOff="logOff"/>
           </div>
-        </div>
       </div>
+
     </div>
+
 </template>
 
 <script>
-  import LogOff from '~/assets/svg/log-off.svg?inline';
+  import LogOff from '~/assets/svg/log-off.svg?raw';
+  import MyItems from '~/assets/svg/my-items.svg?raw';
+  import MyPurchases from '~/assets/svg/my-purchases.svg?raw';
+  import MyOrders from '~/assets/svg/my-orders.svg?raw';
+  import PersonalData from '~/assets/svg/personal-data.svg?raw';
+  import Menu from '~/components/Menu.vue';
 
   export default {
-    components: {LogOff}
+    components: {LogOff, MyItems, MyPurchases, MyOrders, PersonalData, Menu},
+    data() {
+      return {
+        menuItems: [
+          {
+            name: 'My items',
+            svg: MyItems
+           },
+          {
+            name: 'My purchases',
+            svg: MyPurchases
+          },
+          {
+            name: 'My orders',
+            svg: MyOrders
+          },
+          {
+            name: 'Personal data',
+            svg: PersonalData
+          }
+        ],
+       logOff: {
+         name: 'Log off',
+         svg: LogOff
+       }
+      }
+    }
   }
 </script>
-
-
-
-<!--
-
--->
