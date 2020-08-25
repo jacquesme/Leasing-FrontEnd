@@ -31,9 +31,10 @@ export default {
   css: [
     '@/assets/css/input.css',
     '@/assets/css/checkbox.css',
-    '@/assets/css/button.css'
+    '@/assets/css/button.css',
+    '@/assets/css/goodsCard.css'
   ],
-  /*  
+  /*
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
   */

@@ -1,0 +1,60 @@
+/*-------------------
+  Goods Card style
+  ------------------*/
+.goods-content {
+  @apply bg-grey-400 w-xxl h-xxxl;
+}
+
+.goods-img-container {
+  @apply relative w-xxl h-xl1;
+}
+
+.goods-img-container .goods-image {
+  @apply w-xxl h-auto;
+}
+
+.goods-img-container:after {
+  content: '\A';
+  @apply absolute w-full h-full top-0 left-0 bg-black-overlay opacity-0 transition-all duration-1000;
+  -webkit-transition: all 1s;
+}
+
+.middle {
+  @apply transition duration-500 opacity-0 absolute text-center;
+  top: 15%;
+  left: 75%;
+  transform: translate(-20%, -55%);
+  -ms-transform: translate(-20%, -55%);
+}
+
+.goods-img-container:hover:after {
+  @apply opacity-100;
+}
+
+.goods-img-container:hover .middle {
+  @apply opacity-100 z-10;
+}
+
+.pencil-container {
+  @apply inline-block;
+}
+
+.ellipse1 {
+  @apply relative inline-block;
+}
+
+.pencilIcon {
+  @apply absolute inline-block mt-xxs ml-neg-md;
+}
+
+.rubbishBin-container {
+  @apply ml-2 inline-block;
+}
+
+.ellipse2 {
+  @apply relative inline-block;
+}
+
+.rubbishBinIcon {
+  @apply absolute inline-block mt-3xs ml-neg-sm;
+}

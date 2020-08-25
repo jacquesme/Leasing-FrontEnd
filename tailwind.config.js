@@ -11,6 +11,7 @@ module.exports = {
 
       white: '#FFFFFF',
       black: '#323232',
+      'black-overlay': 'rgba(0,0,0,0.4)',
 
       accent: {
         'purple-light': '#852BBD',
@@ -37,9 +38,15 @@ module.exports = {
         '1': '1px'
       },
       spacing: {
+        'neg-sm': '-21px',
+        'neg-md': '-22px',
+        '3xs': '7.5px',
+        xxs: '8px',
+        xs: '9px',
         sm: '10px',
         md: '18px',
         xl: '200px',
+        'xl1': '240px',
         xxl: '300px',
         xxxl: '380px'
       }

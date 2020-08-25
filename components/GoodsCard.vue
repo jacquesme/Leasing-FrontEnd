@@ -1,9 +1,21 @@
 <template>
-  <div class="goods-card">
+  <div class="goods-card inline-block">
 
     <div class="goods-content">
       <div class="goods-img-container">
-        <img class="goods-image" :src="content.jpeg" :alt="car-image">
+        <img class="goods-image" :src="content.jpeg">
+        <div class="middle">
+          <div class="pencil-container">
+            <a href="#">
+              <span class="ellipse1" v-html="content.svg"></span><span class="pencilIcon" v-html="pencilIcon.svg"></span>
+            </a>
+          </div>
+          <div class="rubbishBin-container">
+            <a href="#">
+              <span class="ellipse2" v-html="content.svg"></span><span class="rubbishBinIcon" v-html="rubbishBinIcon.svg"></span>
+            </a>
+          </div>
+        </div>
       </div>
 
       <div class="bg-grey-100 p-4">
@@ -28,15 +40,13 @@
       </div>
     </div>
 
-    <div class="bg-black">
-      <div><a href="#"><span v-html="content.svg"></span></a></div>
-    </div>
+
 
   </div>
 </template>
 
 <script>
   export default {
-    props: ['content']
+    props: ['content', 'pencilIcon', 'rubbishBinIcon']
   }
 </script>

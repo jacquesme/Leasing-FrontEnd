@@ -319,7 +319,7 @@
         <!--The product card-->
         <div class="modal sm:grid-span-2">
           <!--product card content-->
-          <ProductCard :content="ProductCard"/>
+          <ProductCard :content="ProductCard" :pencilIcon="pencilEdit" :rubbishBinIcon="rubbishBin"/>
         </div>
       </div>
 
@@ -373,9 +373,13 @@
           model: 'Coupe 720S',
           transmission: 'auto',
           price: '313,630.00',
-          svg: Ellipse,
-          'svg-pencil-edit': PencilEdit,
-          'svg-rubbish-bin': RubbishBin
+          svg: Ellipse
+        },
+        pencilEdit: {
+          svg: PencilEdit
+        },
+        rubbishBin: {
+          svg: RubbishBin
         }
       }
     }
