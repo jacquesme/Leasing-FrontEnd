@@ -1,24 +1,24 @@
 <template>
   <div class="goods-card inline-block">
 
-    <div class="goods-content">
+    <div class="goods-content rounded-b-md">
       <div class="goods-img-container">
-        <img class="goods-image" :src="content.jpeg">
-        <div class="middle">
+        <img src="~/assets/img/car.jpg"/>
+        <div class="overlay">
           <div class="pencil-container">
             <a href="#">
-              <span class="ellipse1" v-html="content.svg"></span><span class="pencilIcon" v-html="pencilIcon.svg"></span>
+              <PencilEdit class="pencil-icon"/>
             </a>
           </div>
-          <div class="rubbishBin-container">
+          <div class="bin-container">
             <a href="#">
-              <span class="ellipse2" v-html="content.svg"></span><span class="rubbishBinIcon" v-html="rubbishBinIcon.svg"></span>
+              <RubbishBin class="bin-icon"/>
             </a>
           </div>
         </div>
       </div>
 
-      <div class="bg-grey-100 p-4">
+      <div class="bg-grey-100 pt-4 px-4 pb-2 rounded-b-md">
         <h3 class="goods-name text-m text-black mb-2">{{ content.name }}</h3>
 
         <div class="grid grid-cols-1 md:grid-cols-5">
@@ -46,7 +46,89 @@
 </template>
 
 <script>
+  import Car from "~/assets/img/car.jpg";
+  import PencilEdit from '~/assets/svg/pencil-edit-button.svg?inline';
+  import RubbishBin from '~/assets/svg/rubbish-bin.svg?inline';
+
   export default {
-    props: ['content', 'pencilIcon', 'rubbishBinIcon']
+    components: {Car, PencilEdit, RubbishBin},
+    props: ['content']
   }
 </script>
+
+<style lang="scss" scoped>
+  .goods-card {
+    .goods-content {
+      background-color: #F2F2F2;
+      width: 300px;
+      height: auto;
+      .goods-img-container {
+        position: relative;
+        width: 300px;
+        height: 240px;
+        &:after {
+          content: '\A';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: rgba(0,0,0,0.4);
+          opacity: 0;
+          transition: all;
+          transition-duration: 1000ms;
+          border-top-left-radius: 0.375rem;
+          border-top-right-radius: 0.375rem;
+          -webkit-transition: all 1s;
+        }
+        .overlay {
+          transition: all;
+          transition-duration: 500ms;
+          opacity: 0;
+          position: absolute;
+          text-align: center;
+          top: 15%;
+          left: 73%;
+          transform: translate(-20%, -55%);
+          .pencil-container {
+            position: relative;
+            display: inline-block;
+            margin-left: 0.5rem;
+            border: 1px solid white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            .pencil-icon {
+              position: absolute;
+              top: 24%;
+              left: 25%;
+            }
+          }
+          .bin-container {
+            position: relative;
+            display: inline-block;
+            margin-left: 0.5rem;
+            border: 1px solid white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            .bin-icon {
+              position: absolute;
+              top: 24%;
+              left: 30%;
+            }
+          }
+
+        }
+        &:hover:after {
+          opacity: 1
+        }
+        &:hover .overlay {
+          opacity: 1;
+          z-index: 10;
+        }
+      }
+
+    }
+  }
+</style>

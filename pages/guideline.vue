@@ -307,7 +307,7 @@
       <h3 class="text-green-400">04. MENU</h3>
       <div class="grid md:ml-8 text-black text-sm mt-6 mb-16">
           <!--The menu-->
-          <div class="modal sm:grid-span-2">
+          <div class="sm:grid-span-2">
             <!--menu content-->
               <Menu :items="menuItems" :logOff="logOff"/>
           </div>
@@ -317,9 +317,9 @@
       <h3 class="text-green-400">05. PRODUCT CARD</h3>
       <div class="grid mb-16 md:ml-8 text-black text-sm mt-6">
         <!--The product card-->
-        <div class="modal sm:grid-span-2">
+        <div class="sm:grid-span-2">
           <!--product card content-->
-          <ProductCard :content="ProductCard" :pencilIcon="pencilEdit" :rubbishBinIcon="rubbishBin"/>
+          <ProductCard :content="ProductCard"/>
         </div>
       </div>
 
@@ -335,14 +335,10 @@
   import MyOrders from '~/assets/svg/my-orders.svg?raw';
   import PersonalData from '~/assets/svg/personal-data.svg?raw';
   import Menu from '~/components/Menu.vue';
-  import Car from '~/assets/img/car.jpg';
-  import Ellipse from '~/assets/svg/Ellipse.svg?raw';
-  import PencilEdit from '~/assets/svg/pencil-edit-button.svg?raw';
-  import RubbishBin from '~/assets/svg/rubbish-bin.svg?raw';
   import ProductCard from '~/components/GoodsCard.vue';
 
   export default {
-    components: {LogOff, MyItems, MyPurchases, MyOrders, PersonalData, Menu, Car, Ellipse, PencilEdit, RubbishBin,ProductCard},
+    components: {LogOff, MyItems, MyPurchases, MyOrders, PersonalData, Menu, ProductCard},
     data() {
       return {
         menuItems: [
@@ -368,18 +364,10 @@
          svg: LogOff
        },
         ProductCard: {
-          jpeg: Car,
           name: 'MCLAREN',
           model: 'Coupe 720S',
           transmission: 'auto',
           price: '313,630.00',
-          svg: Ellipse
-        },
-        pencilEdit: {
-          svg: PencilEdit
-        },
-        rubbishBin: {
-          svg: RubbishBin
         }
       }
     }

@@ -45,10 +45,11 @@ module.exports = {
         xs: '9px',
         sm: '10px',
         md: '18px',
+        'md1':'30px',
         xl: '200px',
         'xl1': '240px',
-        xxl: '300px',
-        xxxl: '380px'
+        '2xl': '300px',
+        '3xl': '380px'
       }
     },
 

@@ -31,8 +31,7 @@ export default {
   css: [
     '@/assets/css/input.css',
     '@/assets/css/checkbox.css',
-    '@/assets/css/button.css',
-    '@/assets/css/goodsCard.css'
+    '@/assets/css/button.css'
   ],
   /*
   ** Plugins to load before mounting the App
