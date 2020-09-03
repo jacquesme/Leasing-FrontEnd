@@ -22,7 +22,7 @@ Heading and Caption
   .Link style
   ------------------*/
 .link {
-  @apply 	underline;
+  @apply 	underline transition duration-500 ease-in-out;
 }
 
 .link:hover {
@@ -33,7 +33,7 @@ Heading and Caption
   Pagnation style
   ------------------*/
 .pag-list {
-  @apply inline px-3 py-2 rounded;
+  @apply inline px-2 py-2 rounded;
 }
 
 .pag-arrow {
@@ -48,12 +48,16 @@ Heading and Caption
 /*-------------------
   Table style
   ------------------*/
-table, th, td {
-  @apply border border-solid border-grey-400 text-left;
+.table-wrapper {
+  @apply overflow-auto rounded-lg border border-solid border-grey-400 shadow-md;
 }
 
 table {
-  @apply rounded-md shadow-lg;
+  @apply border-collapse;
+}
+
+table, th, td {
+  @apply border border-solid border-grey-400 text-left;
 }
 
 th, td {
@@ -73,32 +77,13 @@ th, .td-1 {
 }
 
 
-/*-------------------
-  Menu style
-  ------------------*/
-.menu {
-  @apply bg-white text-sm text-black shadow-lg w-xl rounded-lg;
-}
 
-.menu-item {
-  @apply mt-4 ml-6;
-}
 
-.svg {
-  @apply inline-block mr-4 h-3 w-3 align-middle;
-}
 
-.menu-logOff {
-  @apply bg-grey-400 mt-4;
-}
 
-.item-logOff {
-  @apply ml-6 mt-6 mb-4;
-}
 
-.svg-logOff {
-  @apply inline-block ml-4 h-4 w-4 align-middle;
-}
+
+
 
 
 

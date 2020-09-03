@@ -1,7 +1,9 @@
 /*======================
 Check Boxes Styles
 ========================*/
-
+label {
+  @apply cursor-pointer;
+}
 input[type='checkbox'] {
   @apply opacity-0 z-0;
 }
