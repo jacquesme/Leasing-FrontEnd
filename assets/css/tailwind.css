@@ -22,7 +22,7 @@ Heading and Caption
   .Link style
   ------------------*/
 .link {
-  @apply 	underline;
+  @apply 	underline transition duration-500 ease-in-out;
 }
 
 .link:hover {

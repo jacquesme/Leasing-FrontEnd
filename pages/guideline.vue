@@ -252,54 +252,7 @@
 
         <h4 class="text-sm text-grey-500">Table</h4>
         <p class="text-xs mt-6 mb-4">The table has a zebra pattern with alternating white and light gray lines.</p>
-        <div class="table-wrapper">
-          <table>
-            <thead class="bg-grey-400">
-            <tr>
-              <th class="w-4/5">Name</th>
-              <th class="w-1/6">The cost</th>
-              <th class="w-1/12"></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <td class="td-1">Lorem ipsum dolor sit amet.</td>
-              <td class="td-2">$1200.00</td>
-              <td class="td-3">Delete</td>
-            </tr>
-            <tr>
-              <td class="td-1">Lorem ipsum dolor.</td>
-              <td class="td-2">$127.00</td>
-              <td class="td-3">Delete</td>
-            </tr>
-            <tr>
-              <td class="td-1">Lorem ipsum.</td>
-              <td class="td-2">$154.00</td>
-              <td class="td-3">Delete</td>
-            </tr>
-            <tr>
-              <td class="td-1">Lorem ipsum dolor sit amet.</td>
-              <td class="td-2">$1890.00</td>
-              <td class="td-3">Delete</td>
-            </tr>
-            <tr>
-              <td class="td-1">Lorem ipsum dolor.</td>
-              <td class="td-2">$12.50</td>
-              <td class="td-3">Delete</td>
-            </tr>
-            <tr>
-              <td class="td-1">Lorem ipsum dolor.</td>
-              <td class="td-2">$12500.78</td>
-              <td class="td-3">Delete</td>
-            </tr>
-            <tr>
-              <td class="td-1">Lorem ipsum dolor sit.</td>
-              <td class="td-2">$25400.00</td>
-              <td class="td-3">Delete</td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
+        <TableComponent/>
 
       </div>
     </div>
@@ -338,9 +291,10 @@
   import PersonalData from '~/assets/svg/personal-data.svg?raw';
   import Menu from '~/components/Menu.vue';
   import ProductCard from '~/components/GoodsCard.vue';
+  import TableComponent from '~/components/Table.vue';
 
   export default {
-    components: {LogOff, MyItems, MyPurchases, MyOrders, PersonalData, Menu, ProductCard},
+    components: {LogOff, MyItems, MyPurchases, MyOrders, PersonalData, Menu, ProductCard, TableComponent},
     data() {
       return {
         menuItems: [
