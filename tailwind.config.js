@@ -48,7 +48,9 @@ module.exports = {
         xl: '200px',
         'xl1': '240px',
         xxl: '300px',
-        xxxl: '380px'
+        xxxl: '380px',
+        '38': '412px',
+        '39': '623px'
       }
     },
 
@@ -63,7 +65,8 @@ module.exports = {
       'sm': '14px',
       'xs': '12px',
       'xxs': '11px'
-    }
+    },
+
 
   },
   variants: {},

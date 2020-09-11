@@ -258,13 +258,13 @@
     </div>
 
 
-    <!--MENU WINDOW-->
+    <!--PopUp WINDOW-->
     <h3 class="text-green-400">04. MENU</h3>
     <div class="grid md:ml-8 text-black text-sm mt-6 mb-16">
-      <!--The menu-->
+      <!--The Popup menu-->
       <div class="sm:grid-span-2">
-        <!--menu content-->
-        <Menu :items="menuItems" :logOff="logOff"/>
+        <!--PopUp content-->
+        <PopUp :items="menuItems" :logOff="logOff"/>
       </div>
     </div>
 
@@ -275,6 +275,17 @@
       <div class="sm:grid-span-2">
         <!--product card content-->
         <ProductCard :content="ProductCard"/>
+      </div>
+    </div>
+
+    <!--Menu WINDOW-->
+    <h3 class="text-green-400">06. Menu</h3>
+    <p class="grid md:ml-8 text-xs mt-6 mb-4">Unauthorized user menu...</p>
+    <div class="grid mb-16  mt-6">
+      <!--The Menu card-->
+      <div class="sm:grid-span-2">
+        <!--Menu content-->
+        <Menu/>
       </div>
     </div>
 
@@ -289,12 +300,15 @@
   import MyPurchases from '~/assets/svg/my-purchases.svg?raw';
   import MyOrders from '~/assets/svg/my-orders.svg?raw';
   import PersonalData from '~/assets/svg/personal-data.svg?raw';
-  import Menu from '~/components/Menu.vue';
+  import PopUp from '~/components/PopUp.vue';
   import ProductCard from '~/components/GoodsCard.vue';
   import TableComponent from '~/components/Table.vue';
+  import Menu from '~/components/Menu.vue';
+
+
 
   export default {
-    components: {LogOff, MyItems, MyPurchases, MyOrders, PersonalData, Menu, ProductCard, TableComponent},
+    components: {LogOff, MyItems, MyPurchases, MyOrders, PersonalData, PopUp, ProductCard, TableComponent, Menu},
     data() {
       return {
         menuItems: [
@@ -323,7 +337,7 @@
           name: 'MCLAREN',
           model: 'Coupe 720S',
           transmission: 'auto',
-          price: '313,630.00',
+          price: '630.00',
           jpeg: ''
         }
       }
