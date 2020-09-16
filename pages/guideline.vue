@@ -129,7 +129,7 @@
           <p class="text-sm">Caption 4</p>
           <p class="text-xs caption-style">CAPTION 4</p>
           <p class="text-sm">Caption 5</p>
-          <p class="text-xxs caption-style">CAPTION 5</p>
+          <p class="text-2xs caption-style">CAPTION 5</p>
         </div>
 
       </div>
@@ -217,21 +217,21 @@
       <!--Input-->
       <h4 class="text-sm text-grey-500 mb-6">Input</h4>
       <div class="text-grey-500 text-xs grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 lg:grid-cols-5 mb-6">
-        <card class="lg:col-start-1">
+        <div class="lg:col-start-1">
           <input type="text" placeholder="Enter login" class="myInp">
           <p>Main</p>
-        </card>
-        <card class="lg:col-start-3">
+        </div>
+        <div class="lg:col-start-3">
           <input type="text" placeholder="Join" class="myInp">
           <p>Fill</p>
-        </card>
-        <card class="lg:col-start-5">
+        </div>
+        <div class="lg:col-start-5">
           <input type="text" placeholder="Jo2ma.com" class="errorInp">
           <p>Error</p>
-        </card>
+        </div>
       </div>
 
-      <!--Pagination-->
+      <!--Pagination COMPONENT-->
       <div class="wrapper  mb-12">
         <h4 class="text-sm text-grey-500 mb-6">Pagination</h4>
         <nav>
@@ -247,7 +247,7 @@
         </nav>
       </div>
 
-      <!--Table-->
+      <!--Table COMPONENT-->
       <div class="grid grid-cols-1 mb-16">
 
         <h4 class="text-sm text-grey-500">Table</h4>
@@ -258,23 +258,45 @@
     </div>
 
 
-    <!--MENU WINDOW-->
+    <!--PopUp WINDOW-->
     <h3 class="text-green-400">04. MENU</h3>
     <div class="grid md:ml-8 text-black text-sm mt-6 mb-16">
-      <!--The menu-->
+      <!--The Popup menu-->
       <div class="sm:grid-span-2">
-        <!--menu content-->
-        <Menu :items="menuItems" :logOff="logOff"/>
+        <!--PopUp content-->
+        <PopUp :items="menuItems" :logOff="logOff"/>
       </div>
     </div>
 
-    <!--PRODUCT CARD WINDOW-->
+    <!--PRODUCT CARD COMPONENT-->
     <h3 class="text-green-400">05. PRODUCT CARD</h3>
     <div class="grid mb-16 md:ml-8 text-black text-sm mt-6">
       <!--The product card-->
       <div class="sm:grid-span-2">
         <!--product card content-->
         <ProductCard :content="ProductCard"/>
+      </div>
+    </div>
+
+    <!--Menu COMPONENT-->
+    <h3 class="text-green-400">06. Menu</h3>
+    <p class="grid md:ml-8 text-xs mt-6 mb-4">Unauthorized user menu...</p>
+    <div class="grid mb-16  mt-6">
+      <!--The Menu card-->
+      <div class="sm:grid-span-2">
+        <!--Menu content-->
+        <Menu/>
+      </div>
+    </div>
+
+    <!--Footer COMPONENT-->
+    <h3 class="text-green-400">07. Footer</h3>
+    <p class="grid md:ml-8 text-xs mt-6 mb-4">Unauthorized user footer...</p>
+    <div class="grid mb-16  mt-6">
+      <!--The Menu card-->
+      <div class="sm:grid-span-2">
+        <!--Menu content-->
+        <Footer/>
       </div>
     </div>
 
@@ -289,12 +311,15 @@
   import MyPurchases from '~/assets/svg/my-purchases.svg?raw';
   import MyOrders from '~/assets/svg/my-orders.svg?raw';
   import PersonalData from '~/assets/svg/personal-data.svg?raw';
-  import Menu from '~/components/Menu.vue';
+  import PopUp from '~/components/PopUp.vue';
   import ProductCard from '~/components/GoodsCard.vue';
   import TableComponent from '~/components/Table.vue';
+  import Menu from '~/components/Menu.vue';
+  import Footer from '~/components/Footer.vue';
+
 
   export default {
-    components: {LogOff, MyItems, MyPurchases, MyOrders, PersonalData, Menu, ProductCard, TableComponent},
+    components: {LogOff, MyItems, MyPurchases, MyOrders, PersonalData, PopUp, ProductCard, TableComponent, Menu, Footer},
     data() {
       return {
         menuItems: [
@@ -323,7 +348,7 @@
           name: 'MCLAREN',
           model: 'Coupe 720S',
           transmission: 'auto',
-          price: '313,630.00',
+          price: '630.00',
           jpeg: ''
         }
       }
