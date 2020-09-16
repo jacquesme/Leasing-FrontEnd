@@ -4,7 +4,7 @@
     <div v-for="(item, key) in items" :key="key">
       <div class="popup-item"><a href="#"><span class="popup-item_svg" v-html="item.svg"></span> {{ item.name }}</a></div>
     </div>
-      <a href="#" class="popup-logOff"><p class="popup-logOff_item">{{ logOff.name }}<span class="popup-logOff_item_svg" v-html="logOff.svg"></span></p></a>
+      <a href="#" class="popup-logoff"><p class="popup-logoff_item">{{ logOff.name }}<span class="popup-logoff_item_svg" v-html="logOff.svg"></span></p></a>
   </div>
 
 </template>
@@ -40,7 +40,7 @@
         width: 0.75rem;
       }
     }
-    &-logOff {
+    &-logoff {
       margin-top: 1.8rem;
       padding-bottom: 5px;
       display: block;

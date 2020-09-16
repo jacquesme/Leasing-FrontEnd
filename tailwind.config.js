@@ -42,14 +42,11 @@ module.exports = {
         'neg-md': '-22px',
         '3xs': '7.5px',
         xxs: '8px',
-        xs: '9px',
         sm: '10px',
         md: '18px',
         'md-40': '40px',
-        xl: '200px',
-        'xl1': '240px',
-        xxl: '300px',
-        xxxl: '380px',
+        '2xl': '300px',
+        '3xl': '380px',
         '38': '412px',
         '39': '623px'
       }
@@ -60,12 +57,12 @@ module.exports = {
     },
 
     fontSize: {
-      '2xl': '22px',
-      'xl': '18px',
-      'm': '16px',
-      'sm': '14px',
+      '2xs': '11px',
       'xs': '12px',
-      'xxs': '11px'
+      'sm': '14px',
+      'm': '16px',
+      'xl': '18px',
+      '2xl': '22px'
     },
 
 

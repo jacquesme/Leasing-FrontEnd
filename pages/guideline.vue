@@ -129,7 +129,7 @@
           <p class="text-sm">Caption 4</p>
           <p class="text-xs caption-style">CAPTION 4</p>
           <p class="text-sm">Caption 5</p>
-          <p class="text-xxs caption-style">CAPTION 5</p>
+          <p class="text-2xs caption-style">CAPTION 5</p>
         </div>
 
       </div>
@@ -217,18 +217,18 @@
       <!--Input-->
       <h4 class="text-sm text-grey-500 mb-6">Input</h4>
       <div class="text-grey-500 text-xs grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 lg:grid-cols-5 mb-6">
-        <card class="lg:col-start-1">
+        <div class="lg:col-start-1">
           <input type="text" placeholder="Enter login" class="myInp">
           <p>Main</p>
-        </card>
-        <card class="lg:col-start-3">
+        </div>
+        <div class="lg:col-start-3">
           <input type="text" placeholder="Join" class="myInp">
           <p>Fill</p>
-        </card>
-        <card class="lg:col-start-5">
+        </div>
+        <div class="lg:col-start-5">
           <input type="text" placeholder="Jo2ma.com" class="errorInp">
           <p>Error</p>
-        </card>
+        </div>
       </div>
 
       <!--Pagination COMPONENT-->

@@ -76,7 +76,7 @@
           width: 50px;
           height: 50px;
           overflow: hidden;
-          &::before, &::after {
+          &:before, &::after {
             content: '';
             position: absolute;
             height: 2px;
@@ -85,8 +85,6 @@
             left: 0%;
             margin-top: -1px;
             background: white;
-          }
-          &::before {
             transform: rotate(45deg);
           }
           &::after {
