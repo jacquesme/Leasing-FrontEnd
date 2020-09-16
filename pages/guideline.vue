@@ -231,7 +231,7 @@
         </card>
       </div>
 
-      <!--Pagination-->
+      <!--Pagination COMPONENT-->
       <div class="wrapper  mb-12">
         <h4 class="text-sm text-grey-500 mb-6">Pagination</h4>
         <nav>
@@ -247,7 +247,7 @@
         </nav>
       </div>
 
-      <!--Table-->
+      <!--Table COMPONENT-->
       <div class="grid grid-cols-1 mb-16">
 
         <h4 class="text-sm text-grey-500">Table</h4>
@@ -268,7 +268,7 @@
       </div>
     </div>
 
-    <!--PRODUCT CARD WINDOW-->
+    <!--PRODUCT CARD COMPONENT-->
     <h3 class="text-green-400">05. PRODUCT CARD</h3>
     <div class="grid mb-16 md:ml-8 text-black text-sm mt-6">
       <!--The product card-->
@@ -278,7 +278,7 @@
       </div>
     </div>
 
-    <!--Menu WINDOW-->
+    <!--Menu COMPONENT-->
     <h3 class="text-green-400">06. Menu</h3>
     <p class="grid md:ml-8 text-xs mt-6 mb-4">Unauthorized user menu...</p>
     <div class="grid mb-16  mt-6">
@@ -286,6 +286,17 @@
       <div class="sm:grid-span-2">
         <!--Menu content-->
         <Menu/>
+      </div>
+    </div>
+
+    <!--Footer COMPONENT-->
+    <h3 class="text-green-400">07. Footer</h3>
+    <p class="grid md:ml-8 text-xs mt-6 mb-4">Unauthorized user footer...</p>
+    <div class="grid mb-16  mt-6">
+      <!--The Menu card-->
+      <div class="sm:grid-span-2">
+        <!--Menu content-->
+        <Footer/>
       </div>
     </div>
 
@@ -304,11 +315,11 @@
   import ProductCard from '~/components/GoodsCard.vue';
   import TableComponent from '~/components/Table.vue';
   import Menu from '~/components/Menu.vue';
-
+  import Footer from '~/components/Footer.vue';
 
 
   export default {
-    components: {LogOff, MyItems, MyPurchases, MyOrders, PersonalData, PopUp, ProductCard, TableComponent, Menu},
+    components: {LogOff, MyItems, MyPurchases, MyOrders, PersonalData, PopUp, ProductCard, TableComponent, Menu, Footer},
     data() {
       return {
         menuItems: [

@@ -1,6 +1,9 @@
 <template>
-  <div class="box-border m-0 p-0 text-white">
-    <nav class="bg-accent-blue inline-block md:block">
+
+  <nav class="box-border m-0 p-0 text-white grid sm:grid-cols-2 md:grid-cols-1">
+
+    <!--NAV HEADER-->
+    <div class="bg-accent-blue inline-block md:block">
       <ul class="menu sm:text-m md:overflow-hidden">
         <li class="menu-item__toggle md:hidden"><a href="#"><span class="close hairline"></span></a></li>
         <li class="px-8 py-5 text-xl md:py-2 md:clear-right md:float-left md:text-xs"><a href="#">Vehicle leasing</a></li>
@@ -11,37 +14,37 @@
         <li class="px-8 py-5 text-xs md:py-2 md:float-clear md:float-right"><a href="#">Login/Registration</a></li>
         <li class="pl-8 pt-8 pb-8 md:hidden"><button class="btn btn-purple">to add an advert</button></li>
       </ul>
-    </nav>
-
-    <section class="absolute mt-6 ml-8 inline-block md:block md:mt-6">
-      <Logo class="logo float-left"/>
-      <p class="logo-name text-accent-purple float-left">AutoLizing</p>
-      <button class="hamburger float-left md:hidden" type="button" @click="menuOpen = !menuOpen">
-        <div class="hamburger-line  bg-grey-600"></div>
-        <div class="hamburger-line  bg-grey-600"></div>
-        <div class="hamburger-line  bg-grey-600"></div>
-      </button>
-      <div action="" class="dropdown mt-16" :class="{ 'dropdown-after' : menuOpen }">
-        <input type="text" placeholder="Vehicle search" class="w-4/5 bg-grey-200 p-2 rounded-md block text-black">
-        <button class="btn btn-purple center mt-4">search</button>
-      </div>
-    </section>
-
-    <div class="addForm grid grid-cols-10 md:px-8 mt-4">
-        <div class="logo-container col-span-2">
-          <Logo class="logo inline"/>
-          <p class="logo-name text-accent-purple inline">AutoLizing</p>
-        </div>
-        <form action="" class="col-span-6">
-          <input type="text" placeholder="Vehicle search" class="bg-grey-200 p-2">
-          <button class="bg-accent-purple  btn-search"><Search class="btn-search_icon"/></button>
-        </form>
-        <div class="col-span-2">
-          <button class="btn btn-purple ml-10">to add an advert</button>
-        </div>
     </div>
 
-  </div>
+    <!--SEARCH BAR-->
+    <div class="sm:ml-8 md:ml-0">
+      <form class="mt-8 md:mt-0 md:flex md:items-center md:justify-between md:flex-wrap md:p-6">
+        <div class="md:flex md:items-center md:flex-shrink-0 md:text-white md:mr-6">
+          <Logo class="logo inline"/>
+          <span class="ml-4 text-2xl text-accent-purple">AutoLizing</span>
+          <button class="hamburger md:hidden" type="button" @click="menuOpen = !menuOpen">
+            <div class="hamburger-line  bg-grey-600"></div>
+            <div class="hamburger-line  bg-grey-600"></div>
+            <div class="hamburger-line  bg-grey-600"></div>
+          </button>
+          <div class="dropdown mt-6 md:hidden" :class="{ 'dropdown-after' : menuOpen }">
+            <input type="text" placeholder="Vehicle search" class="dropdown-search w-8/12 bg-grey-200 p-2 rounded-md inline-block text-black">
+            <button class="bg-accent-purple inline-block btn-search"><Search class="btn-search_icon"/></button>
+          </div>
+        </div>
+        <div class="w-full block md:flex-grow md:flex md:items-center md:w-auto">
+          <div class="text-xs hidden md:block md:flex-grow">
+            <input type="text" placeholder="Vehicle search" class="big-input bg-grey-200 px-4 h-md-40 rounded-l">
+            <button class="bg-accent-purple  btn-search"><Search class="btn-search_icon"/></button>
+          </div>
+          <div class="hidden md:block">
+            <button class="btn btn-purple">to add an advert</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </nav>
 </template>
 
 <script>
@@ -91,7 +94,7 @@
           }
         }
         .hairline {
-          margin-left: 85%;
+          margin-left: 80%;
           &::before, &::after {
             height: 2px;
           }
@@ -99,11 +102,8 @@
       }
     }
   }
-
-  .logo-name {
-    margin: 10px 0 0 10px;
-  }
   .hamburger {
+    position: absolute;
     margin-left: 3rem;
     margin-top: 9px;
     cursor: pointer;
@@ -116,7 +116,6 @@
       margin-bottom: 0;
     }
   }
-
   .dropdown {
     height: 0px;
     width: 104%;
@@ -126,40 +125,23 @@
       height: calc(25vh - 50px);
       transition: height 0.5s ease;
     }
-  }
-
-  .addForm {
-    display: none;
-    .logo-container {
-        margin-top: 6px;
-        .logo {
-          width: 28px;
-          height: 28px;
-        }
-    }
-    form {
-        text-align: center;
-        input[type=text] {
-          width: 90%;
-          font-size: 11px;
-          height: 40px;
-          box-sizing: border-box;
-          vertical-align: top;
-          border-radius: 0.25rem 0 0 0.25rem;
-        }
-        .btn-search {
-          height: 40px;
-          width: 40px;
-          box-sizing: border-box;
-          vertical-align: top;
-          border-radius: 0 0.25rem 0.25rem 0;
-          margin-left: -6px;
-          &_icon {
-            margin-left: 11px;
-          }
-        }
+    &-search {
+      border-radius: 0.25rem 0 0 0.25rem;
     }
   }
-
-
+  .btn-search {
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+    vertical-align: top;
+    border-radius: 0 0.25rem 0.25rem 0;
+    margin-left: -6px;
+    &_icon {
+      margin-left: 11px;
+    }
+  }
+  .big-input {
+    margin-left: 6%;
+    width: 75%;
+  }
 </style>
