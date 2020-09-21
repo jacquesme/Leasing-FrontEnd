@@ -53,7 +53,7 @@ module.exports = {
     },
 
     fontFamily: {
-      serif: 'ProximaNova'
+      serif: 'Proxima Nova'
     },
 
     fontSize: {
