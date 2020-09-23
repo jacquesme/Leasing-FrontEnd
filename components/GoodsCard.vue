@@ -22,7 +22,7 @@
       <div class="bg-grey-100 pt-4 px-4 pb-2">
         <h3 class="text-m text-black mb-2">{{ content.name }}</h3>
 
-        <div class="grid grid-cols-1 md:grid-cols-5">
+        <div class="grid grid-cols-1  mb-4 md:mb-0 md:grid-cols-5">
           <div class="col-span-2 mb-4">
             <p class="goods-model text-xs text-black">Model: {{ content.model }}</p>
           </div>

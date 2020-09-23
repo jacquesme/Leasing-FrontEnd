@@ -12,7 +12,7 @@
         <!--      <li class="md:col-span-2"><a href="#"><Cart class="inline mr-2"/>Basket {$ 2250.00}</a></li>-->
         <!--      <li class="md:col-span-2"><a href="#">Jacques Beck</a></li>-->
         <li class="px-8 py-5 text-xs md:py-2 md:float-clear md:float-right"><a href="#">Login/Registration</a></li>
-        <li class="pl-8 pt-8 pb-8 md:hidden"><button class="btn btn-purple">to add an advert</button></li>
+        <li class="pl-8 pt-8 pb-8 md:hidden"><button class="btn btn-purple">To add an advert</button></li>
       </ul>
     </div>
 
@@ -38,7 +38,7 @@
             <button class="bg-accent-purple  btn-search"><Search class="btn-search_icon"/></button>
           </div>
           <div class="hidden md:block">
-            <button class="btn btn-purple">to add an advert</button>
+            <button class="btn btn-purple">To add an advert</button>
           </div>
         </div>
       </form>
@@ -105,6 +105,9 @@
     margin-left: 3rem;
     margin-top: 9px;
     cursor: pointer;
+    &:focus {
+      outline: none;
+    }
     &-line {
       margin-bottom: 8px;
       width: 30px;
@@ -125,6 +128,13 @@
     }
     &-search {
       border-radius: 0.25rem 0 0 0.25rem;
+      &::placeholder {
+        color: black;
+        opacity: 1;
+      }
+      &:focus {
+        outline: none;
+      }
     }
   }
   .btn-search {
@@ -134,12 +144,24 @@
     vertical-align: top;
     border-radius: 0 0.25rem 0.25rem 0;
     margin-left: -6px;
+    &:hover {
+      background-color: #852BBD;
+      transition: ease-in-out 0.4s;
+    }
     &_icon {
       margin-left: 11px;
     }
   }
   .big-input {
+    color: black;
     margin-left: 6%;
     width: 75%;
+    &::placeholder {
+      color: black;
+      opacity: 1;
+    }
+    &:focus {
+      outline: none;
+    }
   }
 </style>
