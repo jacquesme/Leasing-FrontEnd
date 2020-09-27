@@ -274,7 +274,8 @@
       <!--The product card-->
       <div class="sm:grid-span-2">
         <!--product card content-->
-        <ProductCard :content="ProductCard"/>
+        <ProductCard/>
+        <SideProductCard class="mt-8 md:mt-0 md:ml-12"/>
       </div>
     </div>
 
@@ -313,13 +314,14 @@
   import PersonalData from '~/assets/svg/personal-data.svg?raw';
   import PopUp from '~/components/PopUp.vue';
   import ProductCard from '~/components/GoodsCard.vue';
+  import SideProductCard from '~/components/SideGoodsCard.vue';
   import TableComponent from '~/components/Table.vue';
   import Menu from '~/components/Menu.vue';
   import Footer from '~/components/Footer.vue';
 
 
   export default {
-    components: {LogOff, MyItems, MyPurchases, MyOrders, PersonalData, PopUp, ProductCard, TableComponent, Menu, Footer},
+    components: {LogOff, MyItems, MyPurchases, MyOrders, PersonalData, PopUp, ProductCard, SideProductCard,TableComponent, Menu, Footer},
     data() {
       return {
         menuItems: [
@@ -343,14 +345,21 @@
         logOff: {
           name: 'Log off',
           svg: LogOff
-        },
-        ProductCard: {
-          name: 'MCLAREN',
-          model: 'Coupe 720S',
-          transmission: 'auto',
-          price: '630.00',
-          jpeg: ''
         }
+        // ProductCard: {
+        //   name: 'MCLAREN',
+        //   model: 'Coupe 720S',
+        //   transmission: 'auto',
+        //   price: '630.00',
+        //   jpeg: ''
+        // },
+        // SideProductCard: {
+        //   name: 'Maserati',
+        //   model: 'Quattro',
+        //   transmission: 'auto',
+        //   price: '520.00',
+        //   jpeg: ''
+        // }
       }
     }
   }

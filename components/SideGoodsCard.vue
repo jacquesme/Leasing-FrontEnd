@@ -1,39 +1,37 @@
 <template>
-  <div class="goods-card px-2 pb-2">
 
-    <div class="goods-card_content">
+  <div class="side-goods-card">
 
-      <div class="goods-card_img-container">
-        <img :src="mainItem.src"/>
-        <div class="goods-card_overlay">
-          <div class="goods-card_pencil-container">
+    <div class="side-goods-card_content">
+
+      <div class="side-goods-card_img-container relative">
+        <div class="bg-accent-purple rounded-full h-8 w-8 flex items-center justify-center absolute ml-4 mt-4">
+          <p class="text-white text-2xs">NEW</p>
+        </div>
+        <img :src="sideItem.src"/>
+        <div class="side-goods-card_overlay">
+          <div class="side-goods-card_pencil-container">
             <a href="#">
-              <PencilEdit class="goods-card_pencil-icon"/>
+              <PencilEdit class="side-goods-card_pencil-icon"/>
             </a>
           </div>
-          <div class="goods-card_bin-container">
+          <div class="side-goods-card_bin-container">
             <a href="#">
-              <RubbishBin class="goods-card_bin-icon"/>
+              <RubbishBin class="side-goods-card_bin-icon"/>
             </a>
           </div>
         </div>
       </div>
 
-      <div class="bg-grey-100 pt-4 px-4 pb-2">
-        <h3 class="text-m text-black font-bold mb-2">{{ mainItem.name }}</h3>
+      <div class="bg-grey-100 px-4">
+        <h3 class="text-m text-black font-bold mb-2">{{ sideItem.name }}</h3>
 
-        <div class="grid grid-cols-1  mb-4 md:mb-0 md:grid-cols-5">
-          <div class="col-span-2 mb-4">
-            <p class="goods-model text-xs text-black">Model: {{ mainItem.model }}</p>
-          </div>
-          <div class="col-span-3 md:ml-10">
-            <p class="goods-transmission text-xs text-black">Transmission: {{ mainItem.transmission }}</p>
-          </div>
-          <div class="col-span-2">
-            <p class="text-m caption-style">$ {{ mainItem.price }}</p>
-          </div>
-          <div class="col-span-3 md:ml-5">
-            <button class="btn btn-purple">More details</button>
+        <div>
+          <p class="goods-model text-xs text-black">Model: {{ sideItem.model }}</p>
+          <p class="goods-transmission text-xs text-black">Transmission: {{ sideItem.transmission }}</p>
+          <p class="text-m caption-style">$ {{ sideItem.price }}</p>
+          <div class="flex justify-center pb-4">
+            <button class="btn side-btn-purple">More details</button>
           </div>
         </div>
       </div>
@@ -46,26 +44,26 @@
 <script>
   import PencilEdit from '~/assets/svg/pencil-edit-button.svg?inline';
   import RubbishBin from '~/assets/svg/rubbish-bin.svg?inline';
-
-  export default {
-    components: {PencilEdit, RubbishBin},
-    props: ['mainItem']
-  }
+    export default {
+      components: {PencilEdit, RubbishBin},
+      name: "SideGoodsCard",
+      props:['sideItem']
+    }
 </script>
 
 <style lang="scss" scoped>
-  .goods-card {
-    border-radius: 1rem;
+  .side-goods-card {
+    border-radius: 0.375rem;
     display: inline-block;
     overflow: auto;
     &_content {
       background-color: #F2F2F2;
       height: auto;
-      width: 290px;
-      .goods-card_img-container {
+      width: 200px;
+      .side-goods-card_img-container {
         position: relative;
-        height: 240px;
-        width: 100%;
+        height: 160px;
+        width: 200px;
         &:after {
           position: absolute;
           left: 0;
@@ -81,17 +79,17 @@
           border-top-right-radius: 0.375rem;
           -webkit-transition: all 1s;
         }
-        .goods-card_overlay {
+        .side-goods-card_overlay {
           position: absolute;
-          margin-left: -10px;
+          margin-left: -40px;
           text-align: center;
           top: 15%;
           left: 73%;
-          transform: translate(-20%, -55%);
+          transform: translate( 0%, -35%);
           transition: all;
           transition-duration: 500ms;
           opacity: 0;
-          .goods-card_pencil-container {
+          .side-goods-card_pencil-container {
             position: relative;
             margin-left: 0.5rem;
             display: inline-block;
@@ -99,13 +97,13 @@
             border-radius: 50%;
             width: 30px;
             height: 30px;
-            .goods-card_pencil-icon {
+            .side-goods-card_pencil-icon {
               position: absolute;
               top: 24%;
               left: 25%;
             }
           }
-          .goods-card_bin-container {
+          .side-goods-card_bin-container {
             position: relative;
             display: inline-block;
             margin-left: 0.5rem;
@@ -113,7 +111,7 @@
             border-radius: 50%;
             width: 30px;
             height: 30px;
-            .goods-card_bin-icon {
+            .side-goods-card_bin-icon {
               position: absolute;
               top: 24%;
               left: 30%;
@@ -125,7 +123,7 @@
           &:after {
             opacity: 1
           }
-          .goods-card_overlay {
+          .side-goods-card_overlay {
             opacity: 1;
             z-index: 10;
           }

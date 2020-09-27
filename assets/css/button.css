@@ -9,3 +9,11 @@
 .btn-purple:hover {
   @apply bg-accent-purple-light;
 }
+
+.side-btn-purple {
+  @apply text-accent-purple font-bold border;
+}
+
+.side-btn-purple:hover {
+  @apply text-white bg-accent-purple-light;
+}

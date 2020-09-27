@@ -8,7 +8,7 @@
   import NavMenu from '~/components/Menu.vue';
     export default {
       components: {NavMenu},
-        name: "header"
+        name: "navbar"
     }
 </script>
 
