@@ -14,6 +14,7 @@
           </p>
         </div>
 
+
         <div class="w-full p-8 md:w-1/2">
           <div class="py-8 flex items-center">
             <div class="bg-accent-purple w-1 h-8"></div>

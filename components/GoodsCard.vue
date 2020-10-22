@@ -1,10 +1,10 @@
 <template>
-  <div class="goods-card px-2 pb-2">
+  <div class="goods-card md:px-2 pb-2">
 
     <div class="goods-card_content">
 
       <div class="goods-card_img-container">
-        <img :src="mainItem.src"/>
+        <img class="max-w-full h-full object-contain" :src="mainitem.src"/>
         <div class="goods-card_overlay">
           <div class="goods-card_pencil-container">
             <a href="#">
@@ -20,17 +20,17 @@
       </div>
 
       <div class="bg-grey-100 pt-4 px-4 pb-2">
-        <h3 class="text-m text-black font-bold mb-2">{{ mainItem.name }}</h3>
+        <h3 class="text-m text-black font-bold mb-2">{{ mainitem.name }}</h3>
 
         <div class="grid grid-cols-1  mb-4 md:mb-0 md:grid-cols-5">
           <div class="col-span-2 mb-4">
-            <p class="goods-model text-xs text-black">Model: {{ mainItem.model }}</p>
+            <p class="goods-model text-xs text-black">Model: {{ mainitem.model }}</p>
           </div>
           <div class="col-span-3 md:ml-10">
-            <p class="goods-transmission text-xs text-black">Transmission: {{ mainItem.transmission }}</p>
+            <p class="goods-transmission text-xs text-black">Transmission: {{ mainitem.transmission }}</p>
           </div>
           <div class="col-span-2">
-            <p class="text-m caption-style">$ {{ mainItem.price }}</p>
+            <p class="text-m caption-style">$ {{ mainitem.price }}</p>
           </div>
           <div class="col-span-3 md:ml-5">
             <button class="btn btn-purple">More details</button>
@@ -49,7 +49,7 @@
 
   export default {
     components: {PencilEdit, RubbishBin},
-    props: ['mainItem']
+    props: ['mainitem']
   }
 </script>
 
@@ -61,7 +61,7 @@
     &_content {
       background-color: #F2F2F2;
       height: auto;
-      width: 290px;
+      width: 100%;
       .goods-card_img-container {
         position: relative;
         height: 240px;

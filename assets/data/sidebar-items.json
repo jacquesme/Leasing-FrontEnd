@@ -1,0 +1,37 @@
+[
+  {
+    "name": "MASERATI",
+    "model": "Quattroprote",
+    "transmission": "auto",
+    "price": "520.00",
+    "src": "/img/maserati.png"
+  },
+  {
+    "name": "ASTON MARTIN",
+    "model": "Vantage",
+    "transmission": "auto",
+    "price": "720.00",
+    "src": "/img/aston.png"
+  },
+  {
+    "name": "FERRARI",
+    "model": "Spider 430",
+    "transmission": "auto",
+    "price": "770.00",
+    "src": "/img/ferrari.png"
+  },
+  {
+    "name": "LAMBORGHINI",
+    "model": "Huracan",
+    "transmission": "auto",
+    "price": "970.00",
+    "src": "/img/lambo.png"
+  },
+  {
+    "name": "MERCEDES-BENZ",
+    "model": "Slr",
+    "transmission": "auto",
+    "price": "820.00",
+    "src": "/img/slr.png"
+  }
+]

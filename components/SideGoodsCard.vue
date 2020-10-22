@@ -8,7 +8,7 @@
         <div class="bg-accent-purple rounded-full h-8 w-8 flex items-center justify-center absolute ml-4 mt-4">
           <p class="text-white text-2xs">NEW</p>
         </div>
-        <img :src="sideItem.src"/>
+        <img class="max-w-full h-full object-contain" :src="sideitem.src"/>
         <div class="side-goods-card_overlay">
           <div class="side-goods-card_pencil-container">
             <a href="#">
@@ -24,12 +24,12 @@
       </div>
 
       <div class="bg-grey-100 px-4">
-        <h3 class="text-m text-black font-bold mb-2">{{ sideItem.name }}</h3>
+        <h3 class="text-m text-black font-bold mb-2">{{ sideitem.name }}</h3>
 
         <div>
-          <p class="goods-model text-xs text-black">Model: {{ sideItem.model }}</p>
-          <p class="goods-transmission text-xs text-black">Transmission: {{ sideItem.transmission }}</p>
-          <p class="text-m caption-style">$ {{ sideItem.price }}</p>
+          <p class="goods-model text-xs text-black">Model: {{ sideitem.model }}</p>
+          <p class="goods-transmission text-xs text-black">Transmission: {{ sideitem.transmission }}</p>
+          <p class="text-m caption-style">$ {{ sideitem.price }}</p>
           <div class="flex justify-center pb-4">
             <button class="btn side-btn-purple">More details</button>
           </div>
@@ -47,7 +47,7 @@
     export default {
       components: {PencilEdit, RubbishBin},
       name: "SideGoodsCard",
-      props:['sideItem']
+      props:['sideitem']
     }
 </script>
 

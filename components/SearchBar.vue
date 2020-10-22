@@ -1,18 +1,21 @@
 <template>
   <form class="mt-8 md:mt-0 md:flex md:items-center md:justify-between md:flex-wrap md:p-6">
-    <div class="md:flex md:items-center md:flex-shrink-0 md:text-white md:mr-6">
-      <Logo class="logo inline"/>
+    <div class="flex items-center flex-shrink-0 md:text-white md:mr-6">
+      <Logo class="logo block"/>
       <span class="ml-4 text-2xl text-accent-purple">AutoLizing</span>
-      <button class="hamburger md:hidden" type="button" @click="menuOpen = !menuOpen">
+      <button class="hamburger block md:hidden" type="button" @click="menuOpen = !menuOpen">
         <div class="hamburger-line  bg-grey-600"></div>
         <div class="hamburger-line  bg-grey-600"></div>
         <div class="hamburger-line  bg-grey-600"></div>
       </button>
-      <div class="dropdown mt-6 md:hidden" :class="{ 'dropdown-after' : menuOpen }">
-        <input type="text" placeholder="Vehicle search" class="dropdown-search w-8/12 bg-grey-200 p-2 rounded-md inline-block text-black">
-        <button class="bg-accent-purple inline-block btn-search"><Search class="btn-search_icon"/></button>
-      </div>
+
     </div>
+
+    <div class="dropdown mt-6 md:hidden" :class="{ 'dropdown-after' : menuOpen }">
+      <input type="text" placeholder="Vehicle search" class="dropdown-search w-full bg-grey-200 p-2 rounded-md inline-block text-black">
+      <button class="bg-accent-purple inline-block float-right relative -mt-10 btn-search"><Search class="btn-search_icon"/></button>
+    </div>
+
     <div class="w-full block md:flex-grow md:flex md:items-center md:w-auto">
       <div class="text-xs hidden md:block md:flex-grow">
         <input type="text" placeholder="Vehicle search" class="big-input bg-grey-200 px-4 h-md-40 rounded-l">
@@ -40,10 +43,11 @@
 </script>
 
 <style lang="scss" scoped>
+  .logo {
+    min-width: 40px;
+  }
   .hamburger {
-    position: absolute;
-    margin-left: 3rem;
-    margin-top: 9px;
+    margin-left: auto;
     cursor: pointer;
   &:focus {
      outline: none;
@@ -59,7 +63,7 @@
   }
   .dropdown {
     height: 0px;
-    width: 104%;
+    width: 100%;
     transition: height 0.5s ease;
     overflow: hidden;
   &-after {
