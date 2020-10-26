@@ -56,79 +56,89 @@
     border-radius: 0.375rem;
     display: inline-block;
     overflow: auto;
+
     &_content {
       background-color: #F2F2F2;
       height: auto;
       width: 200px;
-      .side-goods-card_img-container {
-        position: relative;
-        height: 160px;
-        width: 200px;
-        &:after {
-          position: absolute;
-          left: 0;
-          top: 0;
-          background-color: rgba(0,0,0,0.4);
-          content: '\A';
-          opacity: 0;
-          width: 100%;
-          height: 100%;
-          transition: all;
-          transition-duration: 1000ms;
-          border-top-left-radius: 0.375rem;
-          border-top-right-radius: 0.375rem;
-          -webkit-transition: all 1s;
-        }
-        .side-goods-card_overlay {
-          position: absolute;
-          margin-left: -40px;
-          text-align: center;
-          top: 15%;
-          left: 73%;
-          transform: translate( 0%, -35%);
-          transition: all;
-          transition-duration: 500ms;
-          opacity: 0;
-          .side-goods-card_pencil-container {
-            position: relative;
-            margin-left: 0.5rem;
-            display: inline-block;
-            border: 1px solid white;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            .side-goods-card_pencil-icon {
-              position: absolute;
-              top: 24%;
-              left: 25%;
-            }
-          }
-          .side-goods-card_bin-container {
-            position: relative;
-            display: inline-block;
-            margin-left: 0.5rem;
-            border: 1px solid white;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            .side-goods-card_bin-icon {
-              position: absolute;
-              top: 24%;
-              left: 30%;
-            }
-          }
+    }
 
+    &_img-container {
+      position: relative;
+      height: 160px;
+      width: 200px;
+
+      &:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(0,0,0,0.4);
+        content: '\A';
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        transition: all;
+        transition-duration: 1000ms;
+        border-top-left-radius: 0.375rem;
+        border-top-right-radius: 0.375rem;
+        -webkit-transition: all 1s;
+      }
+
+      &:hover {
+        &:after {
+          opacity: 1
         }
-        &:hover {
-          &:after {
-            opacity: 1
-          }
-          .side-goods-card_overlay {
-            opacity: 1;
-            z-index: 10;
-          }
+
+        .side-goods-card_overlay {
+          opacity: 1;
+          z-index: 10;
         }
       }
     }
+
+    &_overlay {
+      position: absolute;
+      margin-left: -40px;
+      text-align: center;
+      top: 15%;
+      left: 73%;
+      transform: translate( 0%, -35%);
+      transition: all;
+      transition-duration: 500ms;
+      opacity: 0;
+    }
+
+    &_pencil-container {
+      position: relative;
+      margin-left: 0.5rem;
+      display: inline-block;
+      border: 1px solid white;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+    }
+
+    &_pencil-icon {
+      position: absolute;
+      top: 24%;
+      left: 25%;
+    }
+
+    &_bin-container {
+      position: relative;
+      display: inline-block;
+      margin-left: 0.5rem;
+      border: 1px solid white;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+    }
+
+    &_bin-icon {
+      position: absolute;
+      top: 24%;
+      left: 30%;
+    }
   }
 </style>
+
