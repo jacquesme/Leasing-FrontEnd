@@ -1,17 +1,13 @@
 <template>
-    <div>
-        <NavMenu/>
-    </div>
+  <div>
+    <NavMenu />
+  </div>
 </template>
 
 <script>
-  import NavMenu from '~/components/Menu.vue';
-    export default {
-      components: {NavMenu},
-        name: "navbar"
-    }
+import NavMenu from "@/components/Menu.vue";
+
+export default { components: { NavMenu }, name: "navbar" };
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

@@ -1,43 +1,34 @@
 <template>
   <div>
-
     <div class="hidden md:block">
-      <navBar/>
+      <navBar />
     </div>
     <div class="mx-8 md:hidden">
-      <searchBar/>
+      <searchBar />
     </div>
 
     <Nuxt />
 
     <div>
-      <footerBar/>
+      <footerBar />
     </div>
-
   </div>
 </template>
 
 <script>
-  import navBar from '~/layouts/nav.vue';
-  import searchBar from '~/components/SearchBar.vue';
-  import footerBar from '~/layouts/footer.vue';
+import navBar from "@/layouts/nav.vue";
+import searchBar from "@/components/SearchBar.vue";
+import footerBar from "@/layouts/footer.vue";
 
-  export default {
-    components: {navBar, searchBar, footerBar}
-  }
+export default {
+  components: { navBar, searchBar, footerBar },
+};
 </script>
 
 <style>
 html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
