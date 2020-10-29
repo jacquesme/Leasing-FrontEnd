@@ -369,5 +369,10 @@ export default {
       },
     };
   },
+  head() {
+    return {
+      title: "Autolizing-Guideline",
+    };
+  },
 };
 </script>

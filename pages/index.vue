@@ -61,6 +61,11 @@ export default {
       mainitems: mainItems,
     };
   },
+  head() {
+    return {
+      title: "Autolizing-Home",
+    };
+  },
 };
 </script>
 

@@ -5,10 +5,7 @@ module.exports = {
     node: true,
   },
 
-  extends: [
-    "plugin:vue/essential",
-    "@vue/prettier",
-  ],
+  extends: ["plugin:vue/essential", "@vue/prettier"],
 
   parserOptions: {
     parser: "babel-eslint",
@@ -21,6 +18,7 @@ module.exports = {
     "global-require": "off",
     "no-dynamic-require": "off",
     "import/no-dynamic-require": "off",
+    // "endOfLine": "lf",
   },
 
   overrides: [
