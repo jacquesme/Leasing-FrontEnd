@@ -1,7 +1,7 @@
 <template>
   <div class="bg-grey-400 mt-12">
     <section class="flex flex-col md:flex-row pb-12">
-      <div class="w-full p-8 md:w-1/2">
+      <div class="w-full px-10 md:w-1/2">
         <div class="py-8 flex items-center">
           <div class="bg-accent-purple w-1 h-8"></div>
           <h1 class="text-accent-purple font-bold ml-4">ABOUT US</h1>
@@ -23,7 +23,7 @@
         </p>
       </div>
 
-      <div class="w-full p-8 md:w-1/2">
+      <div class="w-full px-10 md:w-1/2">
         <div class="py-8 flex items-center">
           <div class="bg-accent-purple w-1 h-8"></div>
           <h1 class="text-accent-purple font-bold ml-4">

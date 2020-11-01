@@ -47,8 +47,6 @@ module.exports = {
         "1xl": "210px",
         "2xl": "300px",
         "3xl": "380px",
-        // '38': '412px',
-        // '39': '623px'
       },
       maxWidth: {
         300: "1200px",
@@ -69,7 +67,7 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require("@tailwindcss/custom-forms")],
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
     enabled: process.env.NODE_ENV === "production",

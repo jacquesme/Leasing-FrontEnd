@@ -32,17 +32,17 @@ Heading and Caption
 /*-------------------
   Pagnation style
   ------------------*/
-.pag-list {
-  @apply inline px-2 py-2 rounded;
-}
+/*.pag-list {*/
+/*  @apply inline px-2 py-2 rounded;*/
+/*}*/
 
-.pag-arrow {
-  @apply font-semibold;
-}
+/*.pag-arrow {*/
+/*  @apply font-semibold;*/
+/*}*/
 
-.pag-arrow:hover {
-  @apply font-black text-accent-blue;
-}
+/*.pag-arrow:hover {*/
+/*  @apply font-black text-accent-blue;*/
+/*}*/
 
 
 /*-------------------
