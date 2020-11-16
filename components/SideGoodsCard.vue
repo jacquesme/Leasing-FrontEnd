@@ -1,7 +1,7 @@
 <template>
-  <div class="side-goods-card">
-    <div class="side-goods-card_content">
-      <div class="side-goods-card_img-container relative">
+  <div class="side-goods-card w-full">
+    <div class="side-goods-card_content sm:w-full md:w-full">
+      <div class="side-goods-card_img-container relative w-full">
         <div
           class="bg-accent-purple rounded-full h-8 w-8 flex items-center justify-center absolute ml-4 mt-4"
         >
@@ -62,13 +62,13 @@ export default {
   &_content {
     background-color: #f2f2f2;
     height: auto;
-    width: 200px;
+    //width: 200px;
   }
 
   &_img-container {
     position: relative;
     height: 160px;
-    width: 200px;
+    //width: 200px;
 
     &:after {
       position: absolute;

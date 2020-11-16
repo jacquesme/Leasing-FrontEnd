@@ -1,6 +1,6 @@
 <template>
   <form
-    class="mt-8 md:mt-0 md:flex md:items-center md:justify-between md:flex-wrap md:p-6"
+    class="mt-8 md:mt-0 md:flex md:items-center md:justify-between md:flex-wrap md:py-6 md:px-10"
   >
     <div class="flex items-center flex-shrink-0 md:text-white md:mr-6">
       <Logo class="logo block" />
@@ -37,7 +37,7 @@
         <input
           type="text"
           placeholder="Vehicle search"
-          class="big-input bg-grey-200 px-4 h-md-40 rounded-l"
+          class="big-input bg-grey-200 px-4 h-10 rounded-l"
         />
         <button class="bg-accent-purple btn-search">
           <Search class="btn-search_icon" />
@@ -136,6 +136,7 @@ export default {
 
   &::placeholder {
     color: black;
+
     opacity: 1;
   }
 

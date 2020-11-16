@@ -7,23 +7,23 @@
           <a href="#"><span class="close hairline"></span></a>
         </li>
         <li
-          class="px-8 py-5 text-xl md:py-2 md:clear-right md:float-left md:text-xs"
+          class="px-10 py-5 text-xl md:py-2 md:clear-right md:float-left md:text-xs"
         >
           <a href="#">Vehicle leasing</a>
         </li>
         <li
-          class="px-8 py-5 text-xl md:py-2 md:clear-right md:float-left md:text-xs"
+          class="px-10 py-5 text-xl md:py-2 md:clear-right md:float-left md:text-xs"
         >
           <a href="#">Commercial vehicle leasing</a>
         </li>
         <li
-          class="px-8 py-5 text-xl md:py-2 md:clear-right md:float-left md:text-xs"
+          class="px-10 py-5 text-xl md:py-2 md:clear-right md:float-left md:text-xs"
         >
           <a href="#">Bus leasing</a>
         </li>
         <!--      <li class="md:col-span-2"><a href="#"><Cart class="inline mr-2"/>Basket {$ 2250.00}</a></li>-->
         <!--      <li class="md:col-span-2"><a href="#">Jacques Beck</a></li>-->
-        <li class="px-8 py-5 text-xs md:py-2 md:float-clear md:float-right">
+        <li class="px-10 py-5 text-xs md:py-2 md:float-clear md:float-right">
           <a href="#">Login/Registration</a>
         </li>
         <li class="pl-8 pt-8 pb-8 md:hidden">

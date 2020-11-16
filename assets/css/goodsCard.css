@@ -2,15 +2,19 @@
   Goods Card style
   ------------------*/
 .goods-content {
-  @apply bg-grey-400 w-2xl h-3xl;
+  @apply bg-grey-400;
+  width: 300px;
+  height: 380px;
 }
 
 .goods-img-container {
-  @apply relative w-2xl h-64;
+  @apply relative h-64;
+  width: 300px;
 }
 
 .goods-img-container .goods-image {
-  @apply w-2xl h-auto;
+  @apply h-auto;
+  width: 300px;
 }
 
 .goods-img-container:after {
@@ -44,7 +48,7 @@
 }
 
 .pencilIcon {
-  @apply absolute inline-block mt-2 ml-neg-md;
+  @apply absolute inline-block mt-2;
 }
 
 .rubbishBin-container {
@@ -56,5 +60,5 @@
 }
 
 .rubbishBinIcon {
-  @apply absolute inline-block mt-3xs ml-neg-sm;
+  @apply absolute inline-block -mt-2;
 }

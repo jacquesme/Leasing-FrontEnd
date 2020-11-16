@@ -35,6 +35,7 @@ export default {
     "@/assets/css/button.css",
     "@/assets/css/goodsCard.css",
     "@/assets/css/fonts.css",
+    "@/assets/css/tailwind.css",
   ],
   /*
    ** Plugins to load before mounting the App
