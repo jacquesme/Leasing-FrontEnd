@@ -8,22 +8,23 @@
     </div>
     <div class="ml-4 mt-5">
       <div class="flex sm:flex-col">
-
-        <label class="container inline-flex">Cars
-          <input type="checkbox" checked="checked">
+        <label class="container inline-flex"
+          >Cars
+          <input type="checkbox" checked="checked" />
           <span class="checkmark"></span>
         </label>
 
-        <label class="container inline-flex">Trucks
-          <input type="checkbox" checked="checked">
+        <label class="container inline-flex"
+          >Trucks
+          <input type="checkbox" checked="checked" />
           <span class="checkmark"></span>
         </label>
 
-        <label class="container inline-flex">Busses
-          <input type="checkbox" checked="checked">
+        <label class="container inline-flex"
+          >Busses
+          <input type="checkbox" checked="checked" />
           <span class="checkmark"></span>
         </label>
-
       </div>
     </div>
   </div>
@@ -31,8 +32,7 @@
 
 <script>
 export default {
-   name: "Category",
-
+  name: "Category",
 };
 </script>
 
@@ -60,7 +60,7 @@ export default {
   height: 19px;
   width: 19px;
   background-color: transparent;
-  border: 3px solid #60198C;
+  border: 3px solid #60198c;
   border-radius: 3px;
 }
 
@@ -71,7 +71,7 @@ export default {
 
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background-color: #60198C;
+  background-color: #60198c;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */

@@ -136,6 +136,7 @@ export default {
 
   &::placeholder {
     color: black;
+
     opacity: 1;
   }
 
