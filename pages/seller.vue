@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="flex justify-center mx-10 mt-10 mb-16">
-      <Pagination/>
+      <Pagination />
     </div>
   </div>
 </template>
@@ -25,15 +25,15 @@ import mySuggestion from "~/components/MySuggestions";
 import myCatogory from "~/components/Category";
 import ProductCard from "@/components/GoodsCard.vue";
 import mainItems from "@/assets/data/main-items.json";
-import Pagination from "@/components/Pagination"
+import Pagination from "@/components/Pagination";
 export default {
   components: { mySuggestion, myCatogory, ProductCard, Pagination },
   name: "seller",
   data() {
-    return{
+    return {
       mainitems: mainItems,
-    }
-  }
+    };
+  },
 };
 </script>
 

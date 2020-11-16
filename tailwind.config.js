@@ -34,22 +34,9 @@ module.exports = {
       borderWidth: {
         1: "1px",
       },
-      spacing: {
-        "neg-sm": "-21px",
-        "neg-md": "-22px",
-        "2xs": "-12px",
-        "3xs": "7.5px",
-        xxs: "8px",
-        sm: "10px",
-        md: "18px",
-        30: "30px",
-        "md-40": "40px",
-        "1xl": "210px",
-        "2xl": "300px",
-        "3xl": "380px",
-      },
+      spacing: {},
       maxWidth: {
-        300: "1200px",
+        300: "1075px",
       },
     },
 

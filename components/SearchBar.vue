@@ -37,7 +37,7 @@
         <input
           type="text"
           placeholder="Vehicle search"
-          class="big-input bg-grey-200 px-4 h-md-40 rounded-l"
+          class="big-input bg-grey-200 px-4 h-10 rounded-l"
         />
         <button class="bg-accent-purple btn-search">
           <Search class="btn-search_icon" />

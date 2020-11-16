@@ -1,5 +1,5 @@
 <template>
-  <div class="goods-card md:px-2 pb-2">
+  <div class="goods-card md:px-2 pb-2 w-full">
     <div class="goods-card_content">
       <div class="goods-card_img-container">
         <img class="max-w-full h-full object-contain" :src="mainitem.src" />
