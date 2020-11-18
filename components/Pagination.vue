@@ -13,7 +13,7 @@
         <li class="pag-list bg-white"><a href="">...</a></li>
         <li class="pag-list bg-grey-100"><a href="">1589</a></li>
         <li class="pag-list bg-grey-100">
-          <a href="" class="pag-arrow">&#62;</a>
+          <a href="" class="pag-arrow">&#62; </a>
         </li>
       </ul>
     </nav>

@@ -25,6 +25,7 @@
                 <div class="bg-accent-purple w-1 h-8"></div>
                 <h1 class="text-accent-purple font-bold ml-4">NEW LISTINGS</h1>
               </div>
+
               <SideProductCard
                 v-for="(sideitem, key) in sideitems"
                 :key="key"

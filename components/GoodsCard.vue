@@ -1,8 +1,12 @@
 <template>
-  <div class="goods-card md:px-2 pb-2 w-full">
+  <div class="goods-card mb-4 md:mb-0 md:px-2 pb-2 w-full">
     <div class="goods-card_content">
       <div class="goods-card_img-container">
-        <img class="max-w-full h-full object-contain" :src="mainitem.src" />
+        <img
+          alt="car image"
+          class="max-w-full h-full object-contain block m-auto"
+          :src="mainitem.src"
+        />
         <div class="goods-card_overlay">
           <div class="goods-card_pencil-container">
             <a href="#">
@@ -17,25 +21,27 @@
         </div>
       </div>
 
-      <div class="bg-grey-100 pt-4 px-4 pb-2">
+      <div class="bg-grey-100 pt-4 px-4 pb-4 md:pb-2">
         <h3 class="text-m text-black font-bold mb-2">{{ mainitem.name }}</h3>
 
-        <div class="grid grid-cols-1 mb-4 md:mb-0 md:grid-cols-5">
-          <div class="col-span-2 mb-4">
+        <div class="flex flex-wrap md:justify-end">
+          <div class="w-full md:mr-auto md:w-1/2">
             <p class="goods-model text-xs text-black">
               Model: {{ mainitem.model }}
             </p>
           </div>
-          <div class="col-span-3 md:ml-10">
-            <p class="goods-transmission text-xs text-black">
+          <div class="w-full md:ml-auto md:w-1/2 md:items-end">
+            <p
+              class="goods-transmission text-xs text-black md:float-right md:pr-5 md:pb-3"
+            >
               Transmission: {{ mainitem.transmission }}
             </p>
           </div>
-          <div class="col-span-2">
-            <p class="text-m caption-style">$ {{ mainitem.price }}</p>
+          <div class="w-full md:ml-auto md:w-1/2">
+            <p class="text-m caption-style md:pl-3">$ {{ mainitem.price }}</p>
           </div>
-          <div class="col-span-3 md:ml-5">
-            <button class="btn btn-purple">More details</button>
+          <div class="w-full md:mr-auto md:w-1/2">
+            <button class="btn btn-purple md:float-right">More details</button>
           </div>
         </div>
       </div>
@@ -127,7 +133,7 @@ export default {
   }
 
   &_bin-container {
-    position: relative;
+    position: absolute;
     display: inline-block;
     margin-left: 0.5rem;
     border: 1px solid white;
@@ -137,9 +143,32 @@ export default {
   }
 
   &_bin-icon {
-    position: absolute;
-    top: 24%;
-    left: 30%;
+    display: block;
+    margin-top: 18%;
+    margin-left: 28%;
   }
 }
 </style>
+
+<!--<div class="bg-grey-100 pt-4 px-4 pb-2">-->
+<!--<h3 class="text-m text-black font-bold mb-2">{{ mainitem.name }}</h3>-->
+
+<!--<div class="grid grid-cols-1 mb-4 md:mb-0 md:grid-cols-5">-->
+<!--  <div class="col-span-2 mb-4">-->
+<!--    <p class="goods-model text-xs text-black">-->
+<!--      Model: {{ mainitem.model }}-->
+<!--    </p>-->
+<!--  </div>-->
+<!--  <div class="col-span-3 md:ml-10">-->
+<!--    <p class="goods-transmission text-xs text-black">-->
+<!--      Transmission: {{ mainitem.transmission }}-->
+<!--    </p>-->
+<!--  </div>-->
+<!--  <div class="col-span-2">-->
+<!--    <p class="text-m caption-style">$ {{ mainitem.price }}</p>-->
+<!--  </div>-->
+<!--  <div class="col-span-3 md:ml-5">-->
+<!--    <button class="btn btn-purple">More details</button>-->
+<!--  </div>-->
+<!--</div>-->
+<!--</div>-->

@@ -11,7 +11,7 @@
 }
 
 .side-btn-purple {
-  @apply text-accent-purple font-bold border;
+  @apply text-xs px-4 py-2 rounded cursor-pointer duration-300 transition-colors text-accent-purple font-bold border;
 }
 
 .side-btn-purple:hover {

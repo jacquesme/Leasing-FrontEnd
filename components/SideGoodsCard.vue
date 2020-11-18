@@ -1,5 +1,5 @@
 <template>
-  <div class="side-goods-card w-full">
+  <div class="side-goods-card mb-4 md:mb-0 md:px-2 pb-2 w-full">
     <div class="side-goods-card_content sm:w-full md:w-full">
       <div class="side-goods-card_img-container relative w-full">
         <div
@@ -7,7 +7,10 @@
         >
           <p class="text-white text-2xs">NEW</p>
         </div>
-        <img class="max-w-full h-full object-contain" :src="sideitem.src" />
+        <img
+          class="max-w-full h-full object-contain block m-auto"
+          :src="sideitem.src"
+        />
         <div class="side-goods-card_overlay">
           <div class="side-goods-card_pencil-container">
             <a href="#">
@@ -15,7 +18,7 @@
             </a>
           </div>
           <div class="side-goods-card_bin-container">
-            <a href="#">
+            <a href="#" class="block m-auto">
               <RubbishBin class="side-goods-card_bin-icon" />
             </a>
           </div>
@@ -33,8 +36,8 @@
             Transmission: {{ sideitem.transmission }}
           </p>
           <p class="text-m caption-style">$ {{ sideitem.price }}</p>
-          <div class="flex justify-center pb-4">
-            <button class="btn side-btn-purple">More details</button>
+          <div class="flex md:justify-center pb-4">
+            <button class="side-btn-purple">More details</button>
           </div>
         </div>
       </div>
@@ -112,7 +115,7 @@ export default {
 
   &_pencil-container {
     position: relative;
-    margin-left: 0.5rem;
+    //margin-left: 0.5rem;
     display: inline-block;
     border: 1px solid white;
     border-radius: 50%;
@@ -127,9 +130,9 @@ export default {
   }
 
   &_bin-container {
-    position: relative;
+    position: absolute;
     display: inline-block;
-    margin-left: 0.5rem;
+    margin-left: 0.3rem;
     border: 1px solid white;
     border-radius: 50%;
     width: 30px;
@@ -137,9 +140,9 @@ export default {
   }
 
   &_bin-icon {
-    position: absolute;
-    top: 24%;
-    left: 30%;
+    display: block;
+    margin-top: 18%;
+    margin-left: 28%;
   }
 }
 </style>

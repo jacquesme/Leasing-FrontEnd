@@ -1,13 +1,13 @@
 <template>
   <div>
     <mySuggestion />
-    <div class="flex flex-wrap md:flex-no-wrap mx-10 mt-16">
+    <div class="flex flex-wrap md:flex-no-wrap mx-10 mt-16 m-auto">
       <div class="md:w-1/6">
         <myCatogory />
       </div>
       <div class="flex flex-row flex-wrap">
         <ProductCard
-          class="sm:w-1/2 lg:w-1/3"
+          class="sm:w-full md:w-1/2 lg:w-1/3"
           v-for="(mainitem, key) in mainitems"
           :key="key"
           :mainitem="mainitem"
