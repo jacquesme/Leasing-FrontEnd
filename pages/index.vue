@@ -1,6 +1,8 @@
 <template>
   <div class="bg-grey-400 w-full">
-    <section class="banner-section bg-grey-300 grid md:grid-cols-2 px-16 py-6">
+    <section
+      class="banner-section bg-grey-300 grid md:grid-cols-2 px-16 md:pl-56 md:pr-20 py-6"
+    >
       <div class="inline-block w-11/12 md:w-9/12 mt-8">
         <h1 class="font-bold text-4xl">Autolizing</h1>
         <p>
@@ -9,7 +11,9 @@
         </p>
         <button class="btn btn-purple mt-4">Search product</button>
       </div>
-      <div class="hidden md:inline-block">
+      <div
+        class="hidden md:inline-block md:flex md:justify-center md:items-center"
+      >
         <img src="/img/audiQ5.png" alt="audiQ5" class="audi w-4/5 h-auto" />
       </div>
     </section>

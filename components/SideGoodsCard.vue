@@ -12,21 +12,27 @@
           :src="sideitem.src"
         />
         <div class="side-goods-card_overlay">
-          <div class="side-goods-card_pencil-container">
+          <div
+            class="side-goods-card_pencil-container flex justify-center items-center"
+          >
             <a href="#">
-              <PencilEdit class="side-goods-card_pencil-icon" />
+              <PencilEdit class="side-goods-card_pencil-icon inline-block" />
             </a>
           </div>
-          <div class="side-goods-card_bin-container">
+          <div
+            class="side-goods-card_bin-container flex justify-center items-center"
+          >
             <a href="#" class="block m-auto">
-              <RubbishBin class="side-goods-card_bin-icon" />
+              <RubbishBin class="side-goods-card_bin-icon inline-block" />
             </a>
           </div>
         </div>
       </div>
 
       <div class="bg-grey-100 px-4">
-        <h3 class="text-m text-black font-bold mb-2">{{ sideitem.name }}</h3>
+        <h3 class="text-m text-black font-bold pt-2">
+          {{ sideitem.name }}
+        </h3>
 
         <div>
           <p class="goods-model text-xs text-black">
@@ -37,7 +43,7 @@
           </p>
           <p class="text-m caption-style">$ {{ sideitem.price }}</p>
           <div class="flex md:justify-center pb-4">
-            <button class="side-btn-purple">More details</button>
+            <button class="side-btn-purple w-full">More details</button>
           </div>
         </div>
       </div>
@@ -123,26 +129,14 @@ export default {
     height: 30px;
   }
 
-  &_pencil-icon {
-    position: absolute;
-    top: 24%;
-    left: 25%;
-  }
-
   &_bin-container {
-    position: absolute;
+    //position: absolute;
     display: inline-block;
     margin-left: 0.3rem;
     border: 1px solid white;
     border-radius: 50%;
     width: 30px;
     height: 30px;
-  }
-
-  &_bin-icon {
-    display: block;
-    margin-top: 18%;
-    margin-left: 28%;
   }
 }
 </style>

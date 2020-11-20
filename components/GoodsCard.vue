@@ -8,14 +8,18 @@
           :src="mainitem.src"
         />
         <div class="goods-card_overlay">
-          <div class="goods-card_pencil-container">
+          <div
+            class="goods-card_pencil-container flex justify-center items-center"
+          >
             <a href="#">
-              <PencilEdit class="goods-card_pencil-icon" />
+              <PencilEdit class="goods-card_pencil-icon inline-block" />
             </a>
           </div>
-          <div class="goods-card_bin-container">
+          <div
+            class="goods-card_bin-container flex justify-center items-center"
+          >
             <a href="#">
-              <RubbishBin class="goods-card_bin-icon" />
+              <RubbishBin class="goods-card_bin-icon inline-block" />
             </a>
           </div>
         </div>
@@ -126,14 +130,8 @@ export default {
     height: 30px;
   }
 
-  &_pencil-icon {
-    position: absolute;
-    top: 24%;
-    left: 25%;
-  }
-
   &_bin-container {
-    position: absolute;
+    //position: absolute;
     display: inline-block;
     margin-left: 0.5rem;
     border: 1px solid white;
@@ -141,34 +139,5 @@ export default {
     width: 30px;
     height: 30px;
   }
-
-  &_bin-icon {
-    display: block;
-    margin-top: 18%;
-    margin-left: 28%;
-  }
 }
 </style>
-
-<!--<div class="bg-grey-100 pt-4 px-4 pb-2">-->
-<!--<h3 class="text-m text-black font-bold mb-2">{{ mainitem.name }}</h3>-->
-
-<!--<div class="grid grid-cols-1 mb-4 md:mb-0 md:grid-cols-5">-->
-<!--  <div class="col-span-2 mb-4">-->
-<!--    <p class="goods-model text-xs text-black">-->
-<!--      Model: {{ mainitem.model }}-->
-<!--    </p>-->
-<!--  </div>-->
-<!--  <div class="col-span-3 md:ml-10">-->
-<!--    <p class="goods-transmission text-xs text-black">-->
-<!--      Transmission: {{ mainitem.transmission }}-->
-<!--    </p>-->
-<!--  </div>-->
-<!--  <div class="col-span-2">-->
-<!--    <p class="text-m caption-style">$ {{ mainitem.price }}</p>-->
-<!--  </div>-->
-<!--  <div class="col-span-3 md:ml-5">-->
-<!--    <button class="btn btn-purple">More details</button>-->
-<!--  </div>-->
-<!--</div>-->
-<!--</div>-->
