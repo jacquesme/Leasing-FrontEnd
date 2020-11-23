@@ -11,19 +11,21 @@
           class="max-w-full h-full object-contain block m-auto"
           :src="sideitem.src"
         />
-        <div class="side-goods-card_overlay">
+        <div class="side-goods-card_overlay w-1/4 md:w-1/2">
           <div
-            class="side-goods-card_pencil-container flex justify-center items-center"
+            class="side-goods-card_pencil-container flex justify-center items-center float-left"
           >
-            <a href="#">
-              <PencilEdit class="side-goods-card_pencil-icon inline-block" />
+            <a href="#" class="flex items-center">
+              <PencilEdit
+                class="side-goods-card_pencil-icon block m-0 m-auto"
+              />
             </a>
           </div>
           <div
-            class="side-goods-card_bin-container flex justify-center items-center"
+            class="side-goods-card_bin-container flex justify-center items-center float-right"
           >
-            <a href="#" class="block m-auto">
-              <RubbishBin class="side-goods-card_bin-icon inline-block" />
+            <a href="#" class="flex items-center">
+              <RubbishBin class="side-goods-card_bin-icon block m-0 m-auto" />
             </a>
           </div>
         </div>
@@ -120,9 +122,8 @@ export default {
   }
 
   &_pencil-container {
-    position: relative;
-    //margin-left: 0.5rem;
-    display: inline-block;
+    //position: relative;
+    //display: inline-block;
     border: 1px solid white;
     border-radius: 50%;
     width: 30px;
@@ -130,9 +131,8 @@ export default {
   }
 
   &_bin-container {
-    //position: absolute;
-    display: inline-block;
-    margin-left: 0.3rem;
+    //display: inline-block;
+    //margin-left: 0.3rem;
     border: 1px solid white;
     border-radius: 50%;
     width: 30px;

@@ -7,19 +7,19 @@
           class="max-w-full h-full object-contain block m-auto"
           :src="mainitem.src"
         />
-        <div class="goods-card_overlay">
+        <div class="goods-card_overlay w-1/4">
           <div
-            class="goods-card_pencil-container flex justify-center items-center"
+            class="goods-card_pencil-container flex justify-center items-center float-left"
           >
-            <a href="#">
-              <PencilEdit class="goods-card_pencil-icon inline-block" />
+            <a href="#" class="flex items-center">
+              <PencilEdit class="goods-card_pencil-icon block m-0 m-auto" />
             </a>
           </div>
           <div
-            class="goods-card_bin-container flex justify-center items-center"
+            class="goods-card_bin-container flex justify-center items-center float-right"
           >
-            <a href="#">
-              <RubbishBin class="goods-card_bin-icon inline-block" />
+            <a href="#" class="flex items-center">
+              <RubbishBin class="goods-card_bin-icon block m-0 m-auto" />
             </a>
           </div>
         </div>
@@ -36,7 +36,7 @@
           </div>
           <div class="w-3/5 md:ml-auto md:w-1/2 md:items-end">
             <p
-              class="goods-transmission text-xs text-black float-right md:pr-5 md:pb-3"
+              class="goods-transmission text-xs text-black float-right md:pr-5 pb-3"
             >
               Transmission: {{ mainitem.transmission }}
             </p>
@@ -110,7 +110,7 @@ export default {
 
   &_overlay {
     position: absolute;
-    margin-left: -10px;
+    margin-left: 10px;
     text-align: center;
     top: 15%;
     left: 73%;
@@ -121,9 +121,9 @@ export default {
   }
 
   &_pencil-container {
-    position: relative;
-    margin-left: 0.5rem;
-    display: inline-block;
+    //position: relative;
+    //margin-left: 0.5rem;
+    //display: inline-block;
     border: 1px solid white;
     border-radius: 50%;
     width: 30px;
@@ -131,9 +131,8 @@ export default {
   }
 
   &_bin-container {
-    //position: absolute;
-    display: inline-block;
-    margin-left: 0.5rem;
+    //display: inline-block;
+    //margin-left: 0.5rem;
     border: 1px solid white;
     border-radius: 50%;
     width: 30px;
