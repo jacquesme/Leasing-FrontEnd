@@ -1,7 +1,7 @@
 <template>
   <div class="bg-grey-400 w-full">
     <section
-      class="banner-section bg-grey-300 grid md:grid-cols-2 px-16 md:pl-56 md:pr-20 py-6"
+      class="banner-section bg-grey-300 text-center md:text-left grid md:grid-cols-2 px-16 md:pl-56 md:pr-20 py-6"
     >
       <div class="inline-block w-11/12 md:w-9/12 mt-8">
         <h1 class="font-bold text-4xl">Autolizing</h1>

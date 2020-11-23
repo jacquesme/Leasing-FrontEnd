@@ -29,23 +29,23 @@
         <h3 class="text-m text-black font-bold mb-2">{{ mainitem.name }}</h3>
 
         <div class="flex flex-wrap md:justify-end">
-          <div class="w-full md:mr-auto md:w-1/2">
+          <div class="w-2/5 md:mr-auto md:w-1/2">
             <p class="goods-model text-xs text-black">
               Model: {{ mainitem.model }}
             </p>
           </div>
-          <div class="w-full md:ml-auto md:w-1/2 md:items-end">
+          <div class="w-3/5 md:ml-auto md:w-1/2 md:items-end">
             <p
-              class="goods-transmission text-xs text-black md:float-right md:pr-5 md:pb-3"
+              class="goods-transmission text-xs text-black float-right md:pr-5 md:pb-3"
             >
               Transmission: {{ mainitem.transmission }}
             </p>
           </div>
-          <div class="w-full md:ml-auto md:w-1/2">
+          <div class="w-2/5 md:ml-auto md:w-1/2">
             <p class="text-m caption-style md:pl-3">$ {{ mainitem.price }}</p>
           </div>
-          <div class="w-full md:mr-auto md:w-1/2">
-            <button class="btn btn-purple md:float-right">More details</button>
+          <div class="w-3/5 md:mr-auto md:w-1/2">
+            <button class="btn btn-purple float-right">More details</button>
           </div>
         </div>
       </div>

@@ -51,6 +51,7 @@ module.exports = {
       m: "16px",
       xl: "18px",
       "2xl": "22px",
+      "4xl": "36px",
     },
   },
   variants: {},
