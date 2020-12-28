@@ -12,10 +12,12 @@
           :key="key"
           :mainitem="mainitem"
         />
+        <div class="w-full">
+          <div class="flex justify-center mx-10 mt-10 mb-16">
+            <Pagination />
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="flex justify-center mx-10 mt-10 mb-16">
-      <Pagination />
     </div>
   </div>
 </template>

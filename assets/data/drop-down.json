@@ -1,0 +1,14 @@
+[
+  {
+    "name": "NUMBER OF SEATS",
+    "opt":["2", "4", "5", "7"]
+  },
+  {
+    "name": "TRANSMISSION",
+    "opt": ["Manual", "Automatic"]
+  },
+  {
+    "name": "ENGINE TYPE",
+    "opt": ["Electric", "Diesel", "Petrol"]
+  }
+]
