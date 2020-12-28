@@ -106,8 +106,8 @@ export default {
 
 /* Style the checkmark/indicator */
 .container .checkmark:after {
-  left: 4px;
-  top: -1px;
+  left: 3px;
+  top: -2px;
   width: 6px;
   height: 13px;
   border: solid white;

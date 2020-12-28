@@ -3,25 +3,68 @@
     <div class="flex items-center">
       <div class="bg-accent-purple w-1 h-10 inline-block"></div>
       <div class="ml-3 w-48 h-10 flex items-center">
-        <h3 class="text-m text-accent-purple font-medium">CATEGORY</h3>
+        <h3 class="text-m text-accent-purple font-medium">MAKE / MODEL</h3>
       </div>
     </div>
     <div class="ml-4 mt-5">
-      <div class="flex sm:flex-col">
+      <div class="mb-6">
+        <input
+          type="text"
+          placeholder="Model"
+          class="border w-full p-2 rounded border-accent-purple"
+        />
+      </div>
+      <div class="">
         <label class="container inline-flex"
-          >Cars
+          >Audi
           <input type="checkbox" checked="checked" />
           <span class="checkmark"></span>
         </label>
 
         <label class="container inline-flex"
-          >Trucks
+          >Bmw
           <input type="checkbox" checked="checked" />
           <span class="checkmark"></span>
         </label>
 
         <label class="container inline-flex"
-          >Busses
+          >Ford
+          <input type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container inline-flex"
+          >Honda
+          <input type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container inline-flex"
+          >Kia
+          <input type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container inline-flex"
+          >Mercedes-Benz
+          <input type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container inline-flex"
+          >Ford
+          <input type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container inline-flex"
+          >Porsche
+          <input type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container inline-flex"
+          >Toyota
           <input type="checkbox" checked="checked" />
           <span class="checkmark"></span>
         </label>
@@ -32,7 +75,7 @@
 
 <script>
 export default {
-  name: "Category",
+  name: "CarModel",
 };
 </script>
 

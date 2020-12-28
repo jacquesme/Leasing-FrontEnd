@@ -1,0 +1,19 @@
+.btn {
+  @apply text-m px-6 py-2 rounded cursor-pointer duration-300 transition-colors;
+}
+
+.btn-filter {
+  @apply text-black font-bold bg-grey-100 whitespace-no-wrap;
+}
+
+.btn-filter:hover {
+  @apply bg-grey-400;
+}
+
+.side-btn-filter {
+  @apply text-xs px-4 py-2 rounded cursor-pointer duration-300 transition-colors text-black font-bold border;
+}
+
+.side-btn-filter:hover {
+  @apply text-white bg-grey-400;
+}
