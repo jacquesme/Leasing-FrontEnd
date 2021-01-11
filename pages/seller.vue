@@ -25,9 +25,9 @@
 <script>
 import mySuggestion from "~/components/MySuggestions";
 import myCatogory from "~/components/Category";
-import ProductCard from "@/components/GoodsCard.vue";
-import mainItems from "@/assets/data/main-items.json";
-import Pagination from "@/components/Pagination";
+import ProductCard from "~/components/GoodsCard";
+import mainItems from "~/assets/data/main-items";
+import Pagination from "~/components/Pagination";
 export default {
   components: { mySuggestion, myCatogory, ProductCard, Pagination },
   name: "seller",
