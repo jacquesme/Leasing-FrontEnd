@@ -51,9 +51,7 @@
 </template>
 
 <script>
-export default {
-  name: "Table",
-};
+export default {};
 </script>
 
 <style scoped>

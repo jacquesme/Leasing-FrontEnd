@@ -1,12 +1,12 @@
 <template>
   <div>
-    <mySuggestion />
+    <Mysuggestion />
     <div class="flex flex-wrap md:flex-no-wrap mx-10 mt-16 m-auto">
       <div class="md:w-1/6">
-        <myCatogory />
+        <Mycatogory />
       </div>
       <div class="flex flex-row flex-wrap">
-        <ProductCard
+        <Productcard
           class="sm:w-full md:w-1/2 lg:w-1/3"
           v-for="(mainitem, key) in mainitems"
           :key="key"
@@ -23,17 +23,17 @@
 </template>
 
 <script>
-import mySuggestion from "~/components/MySuggestions";
-import myCatogory from "~/components/Category";
-import ProductCard from "~/components/GoodsCard";
-import mainItems from "~/assets/data/main-items";
+import Mysuggestion from "~/components/MySuggestions";
+import Mycatogory from "~/components/Category";
+import Productcard from "~/components/GoodsCard";
+import Mainitems from "~/assets/data/main-items";
 import Pagination from "~/components/Pagination";
 export default {
-  components: { mySuggestion, myCatogory, ProductCard, Pagination },
+  components: { Mysuggestion, Mycatogory, Productcard, Pagination },
   name: "seller",
   data() {
     return {
-      mainitems: mainItems,
+      mainitems: Mainitems,
     };
   },
 };

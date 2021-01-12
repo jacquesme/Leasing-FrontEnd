@@ -21,9 +21,7 @@
 </template>
 
 <script>
-export default {
-  name: "Pagination",
-};
+export default {};
 </script>
 
 <style scoped>

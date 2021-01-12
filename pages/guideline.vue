@@ -281,7 +281,7 @@
           The table has a zebra pattern with alternating white and light gray
           lines.
         </p>
-        <TableComponent />
+        <Tablecomponent />
       </div>
     </div>
 
@@ -291,7 +291,7 @@
       <!--The Popup menu-->
       <div class="sm:grid-span-2">
         <!--PopUp content-->
-        <PopUp :items="menuItems" :logOff="logOff" />
+        <Popup :items="menuItems" :logOff="logOff" />
       </div>
     </div>
 
@@ -336,13 +336,13 @@ import MyItems from "@/assets/svg/my-items.svg?raw";
 import MyPurchases from "@/assets/svg/my-purchases.svg?raw";
 import MyOrders from "@/assets/svg/my-orders.svg?raw";
 import PersonalData from "@/assets/svg/personal-data.svg?raw";
-import PopUp from "@/components/PopUp.vue";
-import TableComponent from "@/components/Table.vue";
+import Popup from "@/components/PopUp.vue";
+import Tablecomponent from "@/components/Table.vue";
 import Menu from "@/components/Menu.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
-  components: { PopUp, TableComponent, Menu, Footer },
+  components: { Popup, Tablecomponent, Menu, Footer },
   data() {
     return {
       menuItems: [

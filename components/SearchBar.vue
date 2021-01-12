@@ -56,7 +56,6 @@ import Logo from "@/assets/svg/logo.svg?inline";
 
 export default {
   components: { Logo, Search },
-  name: "SearchBar",
   data() {
     return {
       menuOpen: false,

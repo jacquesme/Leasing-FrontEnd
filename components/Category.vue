@@ -31,9 +31,7 @@
 </template>
 
 <script>
-export default {
-  name: "Category",
-};
+export default {};
 </script>
 
 <style scoped>

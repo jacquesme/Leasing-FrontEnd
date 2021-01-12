@@ -34,17 +34,16 @@
 
     <!--SEARCH BAR-->
     <div class="sm:ml-8 md:ml-0">
-      <SearchBar />
+      <Searchbar />
     </div>
   </nav>
 </template>
 
 <script>
-import SearchBar from "@/components/SearchBar.vue";
+import Searchbar from "@/components/SearchBar.vue";
 
 export default {
-  components: { SearchBar },
-  name: "Menu",
+  components: { Searchbar },
 };
 </script>
 

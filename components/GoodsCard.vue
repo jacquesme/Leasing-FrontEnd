@@ -12,14 +12,14 @@
             class="goods-card_pencil-container flex justify-center items-center float-left"
           >
             <a href="#" class="flex items-center">
-              <PencilEdit class="goods-card_pencil-icon block m-0 m-auto" />
+              <Penciledit class="goods-card_pencil-icon block m-0 m-auto" />
             </a>
           </div>
           <div
             class="goods-card_bin-container flex justify-center items-center float-right"
           >
             <a href="#" class="flex items-center">
-              <RubbishBin class="goods-card_bin-icon block m-0 m-auto" />
+              <Rubbishbin class="goods-card_bin-icon block m-0 m-auto" />
             </a>
           </div>
         </div>
@@ -54,11 +54,11 @@
 </template>
 
 <script>
-import PencilEdit from "@/assets/svg/pencil-edit-button.svg?inline";
-import RubbishBin from "@/assets/svg/rubbish-bin.svg?inline";
+import Penciledit from "@/assets/svg/pencil-edit-button.svg?inline";
+import Rubbishbin from "@/assets/svg/rubbish-bin.svg?inline";
 
 export default {
-  components: { PencilEdit, RubbishBin },
+  components: { Penciledit, Rubbishbin },
   props: ["mainitem"],
 };
 </script>

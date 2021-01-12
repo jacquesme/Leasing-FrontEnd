@@ -36,9 +36,7 @@
 </template>
 
 <script>
-export default {
-  name: "NewProductComment",
-};
+export default {};
 </script>
 
 <style scoped lang="scss">

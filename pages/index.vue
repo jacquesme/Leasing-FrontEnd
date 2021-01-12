@@ -30,14 +30,14 @@
                 <h1 class="text-accent-purple font-bold ml-4">NEW LISTINGS</h1>
               </div>
 
-              <SideProductCard
+              <Sideproductcard
                 v-for="(sideitem, key) in sideitems"
                 :key="key"
                 :sideitem="sideitem"
               />
             </div>
             <div class="parent2 flex flex-row flex-wrap md:mt-12">
-              <ProductCard
+              <Productcard
                 class="sm:w-full md:w-1/2 lg:w-1/3"
                 v-for="(mainitem, key) in mainitems"
                 :key="key"
@@ -52,18 +52,18 @@
 </template>
 
 <script>
-import ProductCard from "@/components/GoodsCard.vue";
-import SideProductCard from "@/components/SideGoodsCard.vue";
-import sideItems from "@/assets/data/sidebar-items.json";
-import mainItems from "@/assets/data/main-items.json";
+import Productcard from "@/components/GoodsCard.vue";
+import Sideproductcard from "@/components/SideGoodsCard.vue";
+import Sideitems from "@/assets/data/sidebar-items.json";
+import Mainitems from "@/assets/data/main-items.json";
 
 export default {
-  components: { ProductCard, SideProductCard },
+  components: { Productcard, Sideproductcard },
   name: "homepage",
   data() {
     return {
-      sideitems: sideItems,
-      mainitems: mainItems,
+      sideitems: Sideitems,
+      mainitems: Mainitems,
     };
   },
   head() {

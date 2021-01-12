@@ -49,9 +49,7 @@
 </template>
 
 <script>
-export default {
-  name: "Price",
-};
+export default {};
 </script>
 
 <style scoped>

@@ -7,7 +7,7 @@
     </div>
     <div class="flex flex-col md:flex-row">
       <div class="flex flex-col md:flex-row w-full md:w-4/5 mt-8 px-8">
-        <productCard
+        <Productcard
           class="sm:w-full md:w-1/2 lg:w-1/3"
           v-for="(mainitem, key) in mainitems"
           v-if="key >= 3 && key <= 5"
@@ -40,14 +40,13 @@
 </template>
 
 <script>
-import productCard from "~/components/GoodsCard";
-import mainItems from "~/assets/data/main-items.json";
+import Productcard from "~/components/GoodsCard";
+import Mainitems from "~/assets/data/main-items.json";
 export default {
-  name: "MoreSellerProduct",
-  components: { productCard },
+  components: { Productcard },
   data() {
     return {
-      mainitems: mainItems,
+      mainitems: Mainitems,
     };
   },
 };

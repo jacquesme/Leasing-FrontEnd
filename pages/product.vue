@@ -81,7 +81,7 @@
       <div
         class="border-2 border-accent-purple rounded rounded-tl-none w-full p-4 space-y-4"
       >
-        <commentCard
+        <Commentcard
           v-for="(comment, key) in comments"
           :key="key"
           :comment="comment"
@@ -91,33 +91,32 @@
     </div>
     <!--NEW COMMENT CARD-->
     <div class="w-full md:w-4/5 mt-8 px-8">
-      <newCommentCard />
+      <Newcommentcard />
     </div>
     <!--MORE SELLER'S PRODUCTS-->
-    <moreSellerProduct />
+    <Moresellerproduct />
     <!--MORE PASSENGER CARS-->
-    <morePassengerCar />
+    <Morepassengercar />
   </div>
 </template>
 
 <script>
-import commentCard from "~/components/ProductComment";
-import newCommentCard from "~/components/NewProductComment";
-import productComments from "~/assets/data/product-comment.json";
-import moreSellerProduct from "~/components/MoreSellerProduct";
-import morePassengerCar from "~/components/MorePassengerCar";
+import Commentcard from "~/components/ProductComment";
+import Newcommentcard from "~/components/NewProductComment";
+import Productcomments from "~/assets/data/product-comment.json";
+import Moresellerproduct from "~/components/MoreSellerProduct";
+import Morepassengercar from "~/components/MorePassengerCar";
 
 export default {
   components: {
-    commentCard,
-    newCommentCard,
-    moreSellerProduct,
-    morePassengerCar,
+    Commentcard,
+    Newcommentcard,
+    Moresellerproduct,
+    Morepassengercar,
   },
-  name: "product",
   data() {
     return {
-      comments: productComments,
+      comments: Productcomments,
     };
   },
 };

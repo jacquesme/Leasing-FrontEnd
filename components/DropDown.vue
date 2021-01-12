@@ -18,7 +18,6 @@
 
 <script>
 export default {
-  name: "SeatNumber",
   props: ["dropdown"],
 };
 </script>

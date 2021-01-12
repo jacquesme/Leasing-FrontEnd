@@ -74,9 +74,7 @@
 </template>
 
 <script>
-export default {
-  name: "CarModel",
-};
+export default {};
 </script>
 
 <style scoped>

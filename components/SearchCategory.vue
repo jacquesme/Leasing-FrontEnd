@@ -31,9 +31,7 @@
 </template>
 
 <script>
-export default {
-  name: "SearchCategory",
-};
+export default {};
 </script>
 
 <style scoped>

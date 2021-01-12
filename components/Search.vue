@@ -11,9 +11,7 @@
 </template>
 
 <script>
-export default {
-  name: "Search",
-};
+export default {};
 </script>
 
 <style scoped></style>

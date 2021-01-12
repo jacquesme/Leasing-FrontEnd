@@ -1,27 +1,28 @@
 <template>
   <div>
     <div class="hidden md:block">
-      <navBar />
+      <Navbar />
     </div>
     <div class="mx-8 md:hidden">
-      <searchBar />
+      <Searchbar />
+      <Searchbar />
     </div>
 
     <Nuxt />
 
     <div>
-      <footerBar />
+      <Footerbar />
     </div>
   </div>
 </template>
 
 <script>
-import navBar from "@/layouts/nav.vue";
-import searchBar from "@/components/SearchBar.vue";
-import footerBar from "@/layouts/footer.vue";
+import Navbar from "@/layouts/nav.vue";
+import Searchbar from "@/components/SearchBar.vue";
+import Footerbar from "@/layouts/footer.vue";
 
 export default {
-  components: { navBar, searchBar, footerBar },
+  components: { Navbar, Searchbar, Footerbar },
 };
 </script>
 
