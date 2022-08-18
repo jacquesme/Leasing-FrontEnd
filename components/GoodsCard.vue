@@ -1,13 +1,13 @@
 <template>
-  <div class="goods-card mb-4 md:mb-0 md:px-2 pb-2 w-full">
-    <div class="goods-card_content">
+  <div class="goods-card w-full">
+    <div class="goods-card_content overflow-x-hidden">
       <div class="goods-card_img-container">
         <img
           alt="car image"
           class="max-w-full h-full object-contain block m-auto"
           :src="mainitem.src"
         />
-        <div class="goods-card_overlay w-1/4">
+        <div class="goods-card_overlay w-1/4 grid grid-rows-1 grid-flow-col gap-4">
           <div
             class="goods-card_pencil-container flex justify-center items-center float-left"
           >
@@ -25,27 +25,28 @@
         </div>
       </div>
 
-      <div class="bg-grey-100 pt-4 px-4 pb-4 md:pb-2">
+      <div class="bg-grey-100 pt-4 px-4 pb-4">
         <h3 class="text-m text-black font-bold mb-2">{{ mainitem.name }}</h3>
-
-        <div class="flex flex-wrap md:justify-end">
-          <div class="w-2/5 md:mr-auto md:w-1/2">
-            <p class="goods-model text-xs text-black">
-              Model: {{ mainitem.model }}
-            </p>
+        <div class="grid sm:grid-cols-1 gap-0 xl:grid-cols-2 xl:gap-4">
+          <div class="grid grid-cols-1">
+            <div class="">
+              <p class="goods-model text-xs text-black">
+                Model: {{ mainitem.model }}
+              </p>
+            </div>
+            <div class="">
+              <p class="text-m">$ {{ mainitem.price }}</p>
+            </div>
           </div>
-          <div class="w-3/5 md:ml-auto md:w-1/2 md:items-end">
-            <p
-              class="goods-transmission text-xs text-black float-right md:pr-5 pb-3"
-            >
-              Transmission: {{ mainitem.transmission }}
-            </p>
-          </div>
-          <div class="w-2/5 md:ml-auto md:w-1/2">
-            <p class="text-m caption-style md:pl-3">$ {{ mainitem.price }}</p>
-          </div>
-          <div class="w-3/5 md:mr-auto md:w-1/2">
-            <button class="btn btn-purple float-right">More details</button>
+          <div class="grid grid-cols-1">
+            <div class="">
+              <p class="goods-transmission text-xs text-black xl:float-right md:pr-5 pb-3">
+                Transmission: {{ mainitem.transmission }}
+              </p>
+            </div>
+            <div class="">
+              <button class="btn btn-purple xl:float-right w-full">More details</button>
+            </div>
           </div>
         </div>
       </div>
@@ -68,18 +69,16 @@ export default {
   border-radius: 1rem;
   display: inline-block;
   overflow: auto;
-
+  width: 100%;
   &_content {
     background-color: #f2f2f2;
     height: auto;
     width: 100%;
   }
-
   &_img-container {
     position: relative;
     height: 240px;
     width: 100%;
-
     &:after {
       position: absolute;
       left: 0;
@@ -95,19 +94,16 @@ export default {
       border-top-right-radius: 0.375rem;
       -webkit-transition: all 1s;
     }
-
     &:hover {
       &:after {
         opacity: 1;
       }
-
       .goods-card_overlay {
         opacity: 1;
         z-index: 10;
       }
     }
   }
-
   &_overlay {
     position: absolute;
     margin-left: 10px;
@@ -119,20 +115,13 @@ export default {
     transition-duration: 500ms;
     opacity: 0;
   }
-
   &_pencil-container {
-    //position: relative;
-    //margin-left: 0.5rem;
-    //display: inline-block;
     border: 1px solid white;
     border-radius: 50%;
     width: 30px;
     height: 30px;
   }
-
   &_bin-container {
-    //display: inline-block;
-    //margin-left: 0.5rem;
     border: 1px solid white;
     border-radius: 50%;
     width: 30px;

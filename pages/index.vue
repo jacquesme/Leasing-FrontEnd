@@ -18,25 +18,28 @@
       </div>
     </section>
 
-    <div class="home-container md:max-w-300 m-auto bg-white">
+    <div class="home-container md:w-full m-auto bg-white pb-20">
       <div class="px-0">
-        <div class="bg-white pt-8 px-4">
+        <div class="bg-white p-8">
           <div
-            class="main flex flex-wrap md:ml-4 md:flex-no-wrap flex-col-reverse md:flex-row"
+            class="main grid md:grid-cols-5 sm:grid-cols-1 md:gap-x-8"
           >
-            <div class="parent1 flex flex-col flex-no-wrap">
-              <div class="side-title flex mb-4">
-                <div class="bg-accent-purple w-1 h-8"></div>
-                <h1 class="text-accent-purple font-bold ml-4">NEW LISTINGS</h1>
+            <div class="parent1 grid grid-cols-1 col-span-1 gap-4">
+              <div class="">
+                <div class="side-title flex items-center">
+                  <div class="bg-accent-purple w-1 h-8"></div>
+                  <h1 class="text-accent-purple font-bold ml-4">NEW LISTINGS</h1>
+                </div>
               </div>
-
+              <div class="grid grid-cols-1 gap-4 w-full">
               <Sideproductcard
                 v-for="(sideitem, key) in sideitems"
                 :key="key"
                 :sideitem="sideitem"
               />
+              </div>
             </div>
-            <div class="parent2 flex flex-row flex-wrap md:mt-12">
+            <div class="parent2 grid sm:grid-cols-1 md:grid-cols-3 md:col-span-4 gap-4 w-full">
               <Productcard
                 class="sm:w-full md:w-1/2 lg:w-1/3"
                 v-for="(mainitem, key) in mainitems"
@@ -48,6 +51,7 @@
         </div>
       </div>
     </div>
+    <AboutReturns/>
   </div>
 </template>
 
@@ -56,9 +60,10 @@ import Productcard from "@/components/GoodsCard.vue";
 import Sideproductcard from "@/components/SideGoodsCard.vue";
 import Sideitems from "@/assets/data/sidebar-items.json";
 import Mainitems from "@/assets/data/main-items.json";
+import AboutReturns from "@/components/AboutPayments.vue";
 
 export default {
-  components: { Productcard, Sideproductcard },
+  components: { Productcard, Sideproductcard, AboutReturns },
   name: "homepage",
   data() {
     return {

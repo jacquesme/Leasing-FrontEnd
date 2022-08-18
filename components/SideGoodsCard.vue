@@ -1,6 +1,6 @@
 <template>
-  <div class="side-goods-card mb-4 md:mb-0 md:px-2 pb-2 w-full">
-    <div class="side-goods-card_content sm:w-full md:w-full">
+  <div class="side-goods-card w-full">
+    <div class="side-goods-card_content md:w-full rounded-md">
       <div class="side-goods-card_img-container relative w-full">
         <div
           class="bg-accent-purple rounded-full h-8 w-8 flex items-center justify-center absolute ml-4 mt-4"
@@ -11,9 +11,9 @@
           class="max-w-full h-full object-contain block m-auto"
           :src="sideitem.src"
         />
-        <div class="side-goods-card_overlay w-1/4 md:w-1/2">
+        <div class="side-goods-card_overlay grid grid-rows-1 grid-flow-col gap-4 absolute ml-4 mt-4">
           <div
-            class="side-goods-card_pencil-container flex justify-center items-center float-left"
+            class="side-goods-card_pencil-container flex justify-center items-center"
           >
             <a href="#" class="flex items-center">
               <Penciledit
@@ -22,7 +22,7 @@
             </a>
           </div>
           <div
-            class="side-goods-card_bin-container flex justify-center items-center float-right"
+            class="side-goods-card_bin-container flex justify-center items-center"
           >
             <a href="#" class="flex items-center">
               <Rubbishbin class="side-goods-card_bin-icon block m-0 m-auto" />
@@ -31,7 +31,7 @@
         </div>
       </div>
 
-      <div class="bg-grey-100 px-4">
+      <div class="bg-grey-100 px-4 rounded-md">
         <h3 class="text-m text-black font-bold pt-2">
           {{ sideitem.name }}
         </h3>
@@ -67,18 +67,16 @@ export default {
 .side-goods-card {
   border-radius: 0.375rem;
   display: inline-block;
-  overflow: auto;
+  overflow: hidden;
 
   &_content {
     background-color: #f2f2f2;
     height: auto;
-    //width: 200px;
   }
 
   &_img-container {
     position: relative;
     height: 160px;
-    //width: 200px;
 
     &:after {
       position: absolute;

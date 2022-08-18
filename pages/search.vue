@@ -1,55 +1,61 @@
 <template>
   <div>
     <Mysearch />
-
-    <div class="flex flex-wrap md:flex-no-wrap mx-4 md:mx-10 mt-16 m-auto">
-      <div class="md:w-1/6 mr-8 hidden md:block">
-        <Searchcategory />
-        <Myprice class="mt-12" />
-        <Mydropdown
-          v-for="(dropdown, key) in dropdowns"
-          :key="key"
-          :dropdown="dropdown"
-        />
-        <Carmodal class="mt-24" />
-      </div>
-      <button
-        class="btn btn-filter focus:outline-none w-full mt-12 mb-16 md:hidden"
-        @click="toggleData()"
-      >
-        Filters
-        <Arrowicon class="inline-block up" v-bind:class="{ down: isToggled }" />
-      </button>
-      <div class="filter-option" v-bind:class="{ hidden: !isToggled }">
-        <div class="md:w-1/6 mr-8">
-          <Searchcategory />
-          <Myprice class="mt-12" />
-          <Mydropdown
-            v-for="(dropdown, key) in dropdowns"
-            :key="key"
-            :dropdown="dropdown"
-          />
-          <Carmodal class="mt-24" />
+    <div class="grid grid-cols-1 md:grid-cols-5 p-8">
+      <div class="col-span-1 md:pr-8">
+        <div class="grid grid-cols-1">
+          <div class="mr-8 hidden md:block">
+            <Searchcategory />
+            <Myprice class="mt-12" />
+            <Mydropdown
+              v-for="(dropdown, key) in dropdowns"
+              :key="key"
+              :dropdown="dropdown"
+            />
+            <Carmodal class="mt-24" />
+          </div>
+          <button
+            class="btn btn-filter focus:outline-none w-full mt-12 mb-16 md:hidden"
+            @click="toggleData()">
+            Filters
+            <Arrowicon
+              class="inline-block up"
+              v-bind:class="{ down: isToggled }"
+            />
+          </button>
+          <div class="filter-option" v-bind:class="{ hidden: !isToggled }">
+            <div class="mr-8">
+              <Searchcategory />
+              <Myprice class="mt-12" />
+              <Mydropdown
+                v-for="(dropdown, key) in dropdowns"
+                :key="key"
+                :dropdown="dropdown"
+              />
+              <Carmodal class="mt-24" />
+            </div>
+            <button
+              class="btn btn-purple w-full focus:outline-none mt-12 mb-16 md:hidden">Apply filters</button>
+          </div>
         </div>
-        <button
-          class="btn btn-purple w-full focus:outline-none mt-12 mb-16 md:hidden"
-        >
-          Apply filters
-        </button>
       </div>
-      <div class="flex flex-row flex-wrap">
-        <Productcard
-          class="sm:w-full md:w-1/2 lg:w-1/3"
-          v-for="(mainitem, key) in mainitems"
-          :key="key"
-          :mainitem="mainitem"
-        />
+      <!--Product Cards-->
+      <div class="col-span-4">
+        <div class="grid sm:grid-cols-1 md:grid-cols-3 md:col-span-4 gap-4 w-full">
+          <Productcard
+            class="sm:w-full md:w-1/2 lg:w-1/3"
+            v-for="(mainitem, key) in mainitems"
+            :key="key"
+            :mainitem="mainitem"
+          />
+        </div>
         <div class="w-full">
-          <div class="flex justify-center mx-10 mt-10 mb-16">
+          <div class="flex justify-center items-center mx-10 mt-10 mb-10">
             <Pagination />
           </div>
         </div>
       </div>
+      <!--End of Product Card Container-->
     </div>
   </div>
 </template>

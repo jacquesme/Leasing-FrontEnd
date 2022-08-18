@@ -33,5 +33,12 @@
     "transmission": "auto",
     "price": "820.00",
     "src": "/img/slr.png"
+  },
+  {
+    "name": "MERCEDES-BENZ",
+    "model": "Slr",
+    "transmission": "auto",
+    "price": "820.00",
+    "src": "/img/slr.png"
   }
 ]

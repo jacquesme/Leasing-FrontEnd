@@ -1,5 +1,5 @@
 <template>
-  <nav class="box-border m-0 p-0 sm:w-1/2 md:w-full text-white bg-accent-blue">
+  <nav class="box-border m-0 p-0 w-full text-white bg-accent-blue">
     <div class="px-10 md:py-2">
       <ul class="md:flex md:justify-between">
         <li

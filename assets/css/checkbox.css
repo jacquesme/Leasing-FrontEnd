@@ -51,7 +51,7 @@ input[type='checkbox']#checkbox-2+label {
 input[type='checkbox']#checkbox-2+label:before {
   content: '';
   @apply w-3 h-3 top-0 left-0 bottom-0 right-0 absolute opacity-0 z-0 m-auto bg-accent-purple bg-center;
-@include transition(0.4s, ease, all);
+  @include transition(0.4s, ease, all);
 }
 
 input[type='checkbox']#checkbox-2:checked+label:before {

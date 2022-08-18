@@ -5,7 +5,6 @@
     </div>
     <div class="mx-8 md:hidden">
       <Searchbar />
-      <Searchbar />
     </div>
 
     <Nuxt />

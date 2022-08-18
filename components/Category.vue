@@ -1,13 +1,13 @@
 <template>
   <div class="">
     <div class="flex items-center">
-      <div class="bg-accent-purple w-1 h-10 inline-block"></div>
       <div class="ml-3 w-48 h-10 flex items-center">
-        <h3 class="text-m text-accent-purple font-medium">CATEGORY</h3>
+        <div class="bg-accent-purple w-1 h-8"></div>
+        <h3 class="text-m text-accent-purple font-medium ml-4">CATEGORY</h3>
       </div>
     </div>
-    <div class="ml-4 mt-5">
-      <div class="flex sm:flex-col">
+    <div class="ml-8 mt-0 md:mt-5">
+      <div class="flex py-8 md:py-0 md:flex-col">
         <label class="container inline-flex"
           >Cars
           <input type="checkbox" checked="checked" />

@@ -22,7 +22,7 @@
     >
       <input
         type="text"
-        placeholder="Vehicle search"
+        placeholder="Product search"
         class="dropdown-search w-full bg-grey-200 p-2 rounded-md inline-block text-black"
       />
       <button
@@ -36,7 +36,7 @@
       <div class="text-xs hidden md:block md:flex-grow">
         <input
           type="text"
-          placeholder="Vehicle search"
+          placeholder="Product search"
           class="big-input bg-grey-200 px-4 h-10 rounded-l"
         />
         <button class="bg-accent-purple btn-search">
