@@ -101,11 +101,11 @@
 </template>
 
 <script>
-import Commentcard from "~/components/ProductComment";
-import Newcommentcard from "~/components/NewProductComment";
+import Commentcard from "~/components/productPage/ProductComment";
+import Newcommentcard from "~/components/productPage/NewProductComment";
 import Productcomments from "~/assets/data/product-comment.json";
-import Moresellerproduct from "~/components/MoreSellerProduct";
-import Morepassengercar from "~/components/MorePassengerCar";
+import Moresellerproduct from "~/components/productPage/MoreSellerProduct";
+import Morepassengercar from "~/components/productPage/MorePassengerCar";
 
 export default {
   components: {

@@ -34,12 +34,13 @@ module.exports = {
       borderWidth: {
         1: "1px",
       },
-      spacing: {},
+      spacing: {
+        "10px": "10px",
+      },
       maxWidth: {
         300: "1075px",
       },
     },
-
     fontFamily: {
       serif: "Proxima Nova",
     },

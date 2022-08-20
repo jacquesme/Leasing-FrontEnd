@@ -28,7 +28,7 @@
               <div class="">
                 <div class="side-title flex items-center">
                   <div class="bg-accent-purple w-1 h-8"></div>
-                  <h1 class="text-accent-purple font-bold ml-4">NEW LISTINGS</h1>
+                  <h1 class="text-accent-purple font-bold ml-4">NEW</h1>
                 </div>
               </div>
               <div class="grid grid-cols-1 gap-4 w-full">
@@ -41,7 +41,6 @@
             </div>
             <div class="parent2 grid sm:grid-cols-1 md:grid-cols-3 md:col-span-4 gap-4 w-full">
               <Productcard
-                class="sm:w-full md:w-1/2 lg:w-1/3"
                 v-for="(mainitem, key) in mainitems"
                 :key="key"
                 :mainitem="mainitem"
@@ -60,7 +59,7 @@ import Productcard from "@/components/GoodsCard.vue";
 import Sideproductcard from "@/components/SideGoodsCard.vue";
 import Sideitems from "@/assets/data/sidebar-items.json";
 import Mainitems from "@/assets/data/main-items.json";
-import AboutReturns from "@/components/AboutPayments.vue";
+import AboutReturns from "@/components/indexPage/AboutPayments.vue";
 
 export default {
   components: { Productcard, Sideproductcard, AboutReturns },

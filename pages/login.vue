@@ -10,7 +10,7 @@
     </div>
     <div class="grid grid-cols-1 pt-8 pb-16 gap-8 md:grid-cols-2 md:gap-4 px-8 md:py-32" v-bind:class="{hidden:!isHidden}">
       <div class="col-span-1 border-2 border-grey-500 rounded p-4">
-        <p class="text-sm font-black font-bold pb-4">01. Login</p>
+        <p class="text-sm font-black font-bold p-4">01. Login</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 pb-3 md:pb-2">
           <div class="md:col-span-1">
             <input
@@ -35,8 +35,8 @@
         </div>
       </div>
       <div class="col-span-1 border-2 border-grey-500 rounded p-4">
-        <p class="text-sm font-black font-bold">02. Registration</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 p-4 gap-4">
+        <p class="text-sm font-black font-bold p-4">02. Registration</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 px-4 pb-4 gap-4">
           <div class="md:col-span-1">
             <input
               type="text"
@@ -52,7 +52,7 @@
             />
           </div>
         </div>
-        <div class="pt-4 px-4 pb-4 md:pt-0">
+        <div class="pt-4 px-4 pb-4 md:pt-10px">
           <button class="btn btn-purple w-full md:w-40 cursor-pointer">Registration</button>
         </div>
       </div>
@@ -61,7 +61,7 @@
   </div>
 </template>
 <script>
-import PasswordRecoveryModal from "../components/login/PasswordRecoveryModal";
+import PasswordRecoveryModal from "../components/loginPage/PasswordRecoveryModal";
 export default {
   components: {PasswordRecoveryModal},
   data() {

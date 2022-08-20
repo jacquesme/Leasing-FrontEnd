@@ -7,7 +7,7 @@
           class="max-w-full h-full object-contain block m-auto"
           :src="mainitem.src"
         />
-        <div class="goods-card_overlay w-1/4 grid grid-rows-1 grid-flow-col gap-4">
+        <div class="goods-card_overlay grid grid-rows-1 grid-flow-col gap-2">
           <div
             class="goods-card_pencil-container flex justify-center items-center float-left"
           >
@@ -75,10 +75,12 @@ export default {
     height: auto;
     width: 100%;
   }
+
   &_img-container {
     position: relative;
     height: 240px;
     width: 100%;
+
     &:after {
       position: absolute;
       left: 0;
@@ -94,33 +96,38 @@ export default {
       border-top-right-radius: 0.375rem;
       -webkit-transition: all 1s;
     }
+
     &:hover {
       &:after {
         opacity: 1;
       }
+
       .goods-card_overlay {
         opacity: 1;
         z-index: 10;
       }
     }
   }
+
   &_overlay {
     position: absolute;
-    margin-left: 10px;
+    //margin-left: 10px;
     text-align: center;
-    top: 15%;
-    left: 73%;
+    top: 12%;
+    left: 76%;
     transform: translate(-20%, -55%);
     transition: all;
     transition-duration: 500ms;
     opacity: 0;
   }
+
   &_pencil-container {
     border: 1px solid white;
     border-radius: 50%;
     width: 30px;
     height: 30px;
   }
+
   &_bin-container {
     border: 1px solid white;
     border-radius: 50%;
@@ -129,3 +136,4 @@ export default {
   }
 }
 </style>
+
