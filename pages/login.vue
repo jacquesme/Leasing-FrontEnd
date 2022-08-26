@@ -8,7 +8,7 @@
         <a href="#" class="">Main</a>
       </div>
     </div>
-    <div class="grid grid-cols-1 pt-8 pb-16 gap-8 md:grid-cols-2 md:gap-4 px-8 md:py-32" v-bind:class="{hidden:!isHidden}">
+    <div class="grid grid-cols-1 pt-8 pb-16 gap-8 md:grid-cols-2 md:gap-4 px-8 md:py-32" :class="{hidden:recoveryModalIsVisible}">
       <div class="col-span-1 border-2 border-grey-500 rounded p-4">
         <p class="text-sm font-black font-bold p-4">01. Login</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 pb-3 md:pb-2">
@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="flex justify-end px-4">
-          <a class="text-xs font-black cursor-pointer" @click="toggleClass()">Forgot password?</a>
+          <a class="text-xs font-black cursor-pointer" @click="showRecoveryModal()">Forgot password?</a>
         </div>
         <div class="pt-4 px-4 pb-4 md:pt-0">
           <button class="btn btn-purple w-full md:w-40">Log in</button>
@@ -57,7 +57,10 @@
         </div>
       </div>
     </div>
-    <PasswordRecoveryModal v-bind:class="{ hidden: isHidden }"/>
+    <PasswordRecoveryModal
+      :class="{ hidden: !recoveryModalIsVisible }"
+      @close="closeRecoveryModal"
+    />
   </div>
 </template>
 <script>
@@ -65,24 +68,27 @@ import PasswordRecoveryModal from "../components/loginPage/PasswordRecoveryModal
 export default {
   components: {PasswordRecoveryModal},
   data() {
-    return{
-      isHidden: true,
+    return {
+      recoveryModalIsVisible: false,
     };
   },
   methods: {
-    toggleClass: function (event) {
-      this.isHidden = !this.isHidden;
-    }
-  }
+    showRecoveryModal() {
+      this.recoveryModalIsVisible = true;
+    },
+    closeRecoveryModal() {
+      this.recoveryModalIsVisible = false;
+    },
+  },
 }
 
 </script>
 
 <style lang="scss" scoped>
 .login_container {
-  height: 100vh;
+  //height: 100vh;
   @media (min-width: 768px) {
-    height: calc(100vh - 164px);
+    height: calc(500px + 90px);
   }
 }
 </style>

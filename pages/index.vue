@@ -56,7 +56,7 @@
 
 <script>
 import Productcard from "@/components/GoodsCard.vue";
-import Sideproductcard from "@/components/SideGoodsCard.vue";
+import Sideproductcard from "@/components/indexPage/SideGoodsCard.vue";
 import Sideitems from "@/assets/data/sidebar-items.json";
 import Mainitems from "@/assets/data/main-items.json";
 import AboutReturns from "@/components/indexPage/AboutPayments.vue";

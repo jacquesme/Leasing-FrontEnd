@@ -17,3 +17,11 @@
 .side-btn-purple:hover {
   @apply text-white bg-accent-purple-light;
 }
+
+.btn-grey {
+  @apply text-white bg-grey-500
+}
+
+.btn-grey:hover {
+  @apply bg-accent-grey-light
+}
