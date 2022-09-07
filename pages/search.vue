@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <Mysearch />
+  <div class="search-container">
+    <page-caption />
     <div class="grid grid-cols-1 md:grid-cols-5 p-8">
       <div class="col-span-1 md:pr-8">
         <div class="grid grid-cols-1">
           <div class="mr-8 hidden md:block">
-            <Searchcategory />
+            <SearchCategory />
             <Myprice class="mt-12" />
             <Mydropdown
               v-for="(dropdown, key) in dropdowns"
@@ -16,9 +16,10 @@
           </div>
           <button
             class="btn btn-filter focus:outline-none w-full mt-12 mb-16 md:hidden"
-            @click="toggleData()">
+            @click="toggleData()"
+          >
             Filters
-            <Arrowicon
+            <ArrowIcon
               class="inline-block up"
               v-bind:class="{ down: isToggled }"
             />
@@ -35,16 +36,21 @@
               <Carmodal class="mt-24" />
             </div>
             <button
-              class="btn btn-purple w-full focus:outline-none mt-12 mb-16 md:hidden">Apply filters</button>
+              class="btn btn-purple w-full focus:outline-none mt-12 mb-16 md:hidden"
+            >
+              Apply filters
+            </button>
           </div>
         </div>
       </div>
       <!--Product Cards-->
       <div class="col-span-4">
-        <div class="grid sm:grid-cols-1 md:grid-cols-3 md:col-span-4 gap-4 w-full">
-          <Productcard
+        <div
+          class="grid sm:grid-cols-1 md:grid-cols-3 md:col-span-4 gap-4 w-full"
+        >
+          <ProductCard
             class="sm:w-full md:w-1/2 lg:w-1/3"
-            v-for="(mainitem, key) in mainitems"
+            v-for="(mainitem, key) in mainItems"
             :key="key"
             :mainitem="mainitem"
           />
@@ -61,33 +67,32 @@
 </template>
 
 <script>
-import Mysearch from "~/components/Search";
-import Searchcategory from "~/components/SearchCategory";
-import Productcard from "~/components/GoodsCard";
-import Mainitems from "~/assets/data/main-items.json";
+import SearchCategory from "~/components/SearchCategory";
+import ProductCard from "~/components/GoodsCard";
+import MainItems from "~/assets/data/main-items.json";
 import Dropdowns from "~/assets/data/drop-down.json";
 import Myprice from "~/components/Price";
 import Mydropdown from "~/components/Dropdown";
 import Carmodal from "~/components/CarModel";
 import Pagination from "~/components/Pagination";
-import Arrowicon from "@/assets/svg/arrow.svg?inline";
+import ArrowIcon from "~/assets/svg/arrow.svg?inline";
+import PageCaption from "~/components/allPages/pageCaption";
 
 export default {
   components: {
-    Mysearch,
-    Searchcategory,
-    Productcard,
+    SearchCategory,
+    ProductCard,
     Myprice,
     Pagination,
     Mydropdown,
     Carmodal,
-    Arrowicon,
+    ArrowIcon,
+    PageCaption,
   },
-  name: "search",
 
   data() {
     return {
-      mainitems: Mainitems,
+      mainItems: MainItems,
       dropdowns: Dropdowns,
       isToggled: false,
     };
@@ -100,7 +105,11 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.search-container {
+  min-height: calc(100vh - 164px);
+}
+
 .up {
   transform: rotate(0deg);
 }

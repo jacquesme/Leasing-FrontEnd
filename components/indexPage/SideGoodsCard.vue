@@ -11,12 +11,15 @@
           class="max-w-full h-full object-contain block m-auto"
           :src="sideitem.src"
         />
-        <div class="side-goods-card_overlay grid grid-rows-1 grid-flow-col gap-2" :class="isRootName">
+        <div
+          class="side-goods-card_overlay grid grid-rows-1 grid-flow-col gap-2"
+          v-if="$route.name === 'seller' ? 'hidden' : ''"
+        >
           <div
             class="side-goods-card_pencil-container flex justify-center items-center"
           >
             <a href="#" class="flex items-center">
-              <Penciledit
+              <PencilEdit
                 class="side-goods-card_pencil-icon block m-0 m-auto"
               />
             </a>
@@ -25,7 +28,7 @@
             class="side-goods-card_bin-container flex justify-center items-center"
           >
             <a href="#" class="flex items-center">
-              <Rubbishbin class="side-goods-card_bin-icon block m-0 m-auto" />
+              <RubbishBin class="side-goods-card_bin-icon block m-0 m-auto" />
             </a>
           </div>
         </div>
@@ -54,17 +57,12 @@
 </template>
 
 <script>
-import Penciledit from "@/assets/svg/pencil-edit-button.svg?inline";
-import Rubbishbin from "@/assets/svg/rubbish-bin.svg?inline";
+import PencilEdit from "@/assets/svg/pencil-edit-button.svg?inline";
+import RubbishBin from "@/assets/svg/rubbish-bin.svg?inline";
 
 export default {
-  components: { Penciledit, Rubbishbin },
+  components: { PencilEdit, RubbishBin },
   props: ["sideitem"],
-  computed: {
-    isRootName() {
-      return this.$route.name === 'index' ? 'hidden' : '';
-    }
-  },
 };
 </script>
 

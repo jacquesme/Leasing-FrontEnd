@@ -1,16 +1,6 @@
 <template>
-  <div class="w-full">
-    <!---->
-    <div
-      class="bg-grey-100 flex justify-between items-center flex-wrap py-4 px-10"
-    >
-      <h2 class="text-xl font-bold">MERCEDES BENZ C200</h2>
-      <div class="text-xs text-grey-600">
-        <a href="#" class="pr-4">Main</a> / <a href="#" class="px-4">Cars</a> /
-        <a href="#" class="pl-4">MERCEDES BENZ C200</a>
-      </div>
-    </div>
-    <!---->
+  <div class="product-container w-full">
+    <page-caption :caption-text="trailingCaption" />
     <div class="flex flex-col w-full md:flex-row p-8">
       <!--      IMAGE DIV-->
       <div class="flex flex-wrap-reverse w-full md:flex-no-wrap md:w-1/3">
@@ -106,6 +96,7 @@ import Newcommentcard from "~/components/productPage/NewProductComment";
 import Productcomments from "~/assets/data/product-comment.json";
 import Moresellerproduct from "~/components/productPage/MoreSellerProduct";
 import Morepassengercar from "~/components/productPage/MorePassengerCar";
+import PageCaption from "../components/allPages/pageCaption";
 
 export default {
   components: {
@@ -113,13 +104,19 @@ export default {
     Newcommentcard,
     Moresellerproduct,
     Morepassengercar,
+    PageCaption,
   },
   data() {
     return {
       comments: Productcomments,
+      trailingCaption: "Mercedes Benz C200",
     };
   },
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.product-container {
+  min-height: calc(100vh - 164px);
+}
+</style>

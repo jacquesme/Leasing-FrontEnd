@@ -3,7 +3,7 @@
 }
 
 .btn-purple {
-  @apply text-white bg-accent-purple whitespace-no-wrap;
+  @apply text-white bg-accent-purple;
 }
 
 .btn-purple:hover {

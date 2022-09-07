@@ -18,7 +18,7 @@
           </h3>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="">
+          <div>
             <button
               class="btn btn-grey w-full focus:outline-none"
               @click="sendData"
@@ -26,7 +26,7 @@
               No
             </button>
           </div>
-          <div class="">
+          <div>
             <button class="btn btn-purple w-full focus:outline-none">
               Yes
             </button>

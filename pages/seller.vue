@@ -1,22 +1,22 @@
 <template>
   <div
-    class="relative"
+    class="seller-container relative"
     :class="{ deleteModalIsVisible }"
     :style="[
       deleteModalIsVisible ? { position: 'fixed' } : { position: 'relative' },
     ]"
   >
     <div class="">
-      <Mysuggestion />
+      <page-caption :caption-text="trailingCaption" />
       <div class="grid grid-cols-1 md:grid-cols-5 p-8">
         <div class="col-span-1 md:w-1/6">
-          <Mycatogory />
+          <MyCategory />
         </div>
         <div class="col-span-4">
           <div
             class="grid sm:grid-cols-1 md:grid-cols-3 md:col-span-4 gap-4 w-full"
           >
-            <Productcard
+            <ProductCard
               class="sm:w-full md:w-1/2 lg:w-1/3"
               v-for="(mainitem, key) in mainitems"
               :key="key"
@@ -41,26 +41,27 @@
 </template>
 
 <script>
-import Mysuggestion from "~/components/MySuggestions";
-import Mycatogory from "~/components/Category";
-import Productcard from "~/components/GoodsCard";
-import Mainitems from "~/assets/data/main-items";
+import PageCaption from "../components/allPages/pageCaption";
+import MyCategory from "~/components/Category";
+import ProductCard from "~/components/GoodsCard";
+import MainItems from "~/assets/data/main-items";
 import Pagination from "~/components/Pagination";
 import DeleteAddModal from "../components/sellerPage/deleteAddModal";
 
 export default {
   components: {
+    PageCaption,
     DeleteAddModal,
-    Mysuggestion,
-    Mycatogory,
-    Productcard,
+    MyCategory,
+    ProductCard,
     Pagination,
   },
   name: "seller",
   data() {
     return {
-      mainitems: Mainitems,
+      mainitems: MainItems,
       deleteModalIsVisible: false,
+      trailingCaption: "MY SUGGESTIONS",
     };
   },
   computed: {},
@@ -76,4 +77,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.seller-container {
+  min-height: calc(100vh - 164px);
+}
+</style>
