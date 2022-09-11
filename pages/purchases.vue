@@ -1,7 +1,7 @@
 <template>
   <div class="purchase-container">
     <page-caption :caption-text="trailingCaption" />
-    <div class="flex flex-col gap-8 px-24 py-20">
+    <div class="flex flex-col gap-8 px-0 md:px-24 py-20">
       <product-table />
       <product-table />
       <product-table />
