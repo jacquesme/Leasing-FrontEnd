@@ -2,105 +2,105 @@
   {
     "name": "BMW",
     "model": "634Ci",
-    "transmission": "auto",
+    "transmission": "automatic",
     "price": "480.00",
     "src": "/img/635.png"
   },
   {
     "name": "MERCEDES-BENZ",
     "model": "C200",
-    "transmission": "auto",
+    "transmission": "automatic",
     "price": "220.00",
     "src": "/img/c200.png"
   },
   {
     "name": "FORD",
     "model": "Focus",
-    "transmission": "auto",
+    "transmission": "manual",
     "price": "120.00",
     "src": "/img/focus.png"
   },
   {
     "name": "HONDA",
     "model": "Accord",
-    "transmission": "auto",
+    "transmission": "automatic",
     "price": "170.00",
     "src": "/img/honda.png"
   },
   {
     "name": "HUMMER",
     "model": "H2o",
-    "transmission": "auto",
+    "transmission": "manual",
     "price": "320.00",
     "src": "/img/hummer.png"
   },
   {
     "name": "KIA",
     "model": "Optima",
-    "transmission": "auto",
+    "transmission": "manual",
     "price": "320.00",
     "src": "/img/optima.png"
   },
   {
     "name": "AUDI",
     "model": "Q7",
-    "transmission": "auto",
+    "transmission": "automatic",
     "price": "430.00",
     "src": "/img/q7.png"
   },
   {
     "name": "AUDI",
-    "model": "Rs4",
-    "transmission": "auto",
+    "model": "RS4",
+    "transmission": "automatic",
     "price": "400.00",
     "src": "/img/rs4.png"
   },
   {
     "name": "TOYOTA",
     "model": "Scion",
-    "transmission": "auto",
+    "transmission": "manual",
     "price": "100.00",
     "src": "/img/scion.png"
   },
   {
     "name": "MERCEDES-BENZ",
-    "model": "Ml 350",
-    "transmission": "auto",
+    "model": "ML350",
+    "transmission": "automatic",
     "price": "310.00",
     "src": "/img/ml350.png"
   },
   {
     "name": "MERCEDES-BENZ",
-    "model": "Sl 500",
-    "transmission": "auto",
+    "model": "SL500",
+    "transmission": "automatic",
     "price": "380.00",
     "src": "/img/sl500.png"
   },
   {
     "name": "BMW",
     "model": "i8",
-    "transmission": "auto",
+    "transmission": "automatic",
     "price": "410.00",
     "src": "/img/i8.png"
   },
   {
     "name": "MERCEDES-BENZ",
-    "model": "Glc 250",
-    "transmission": "auto",
+    "model": "GLC250",
+    "transmission": "manual",
     "price": "280.00",
     "src": "/img/glc.png"
   },
   {
     "name": "PORSCHE",
     "model": "Cayman",
-    "transmission": "auto",
+    "transmission": "automatic",
     "price": "330.00",
     "src": "/img/caiman.png"
   },
   {
     "name": "AUDI",
     "model": "A6",
-    "transmission": "auto",
+    "transmission": "automatic",
     "price": "290.00",
     "src": "/img/a6.png"
   }

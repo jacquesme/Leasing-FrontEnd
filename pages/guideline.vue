@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-screen-xl m-auto px-4 sm:px-10">
+  <div class="guideline-container max-w-screen-xl m-auto px-4 sm:px-10">
     <!--COLORS DIV-->
 
     <h3 class="text-green-400 mt-8">01. COLORS</h3>
@@ -376,3 +376,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.guideline-container {
+  min-height: calc(100vh - 164px);
+}
+</style>

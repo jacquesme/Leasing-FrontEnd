@@ -15,6 +15,7 @@ module.exports = {
         "purple-light": "#852BBD",
         purple: "#60198C",
         blue: "#0A386A",
+        "grey-light": "#DDDDDD",
       },
 
       grey: {
@@ -36,6 +37,8 @@ module.exports = {
       },
       spacing: {
         "10px": "10px",
+        "10%": "10%",
+        "30%": "30%",
       },
       maxWidth: {
         300: "1075px",
@@ -57,7 +60,7 @@ module.exports = {
   },
   variants: {},
   plugins: [require("@tailwindcss/custom-forms")],
-  purge: {
+  content: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
     enabled: process.env.NODE_ENV === "production",
     content: [

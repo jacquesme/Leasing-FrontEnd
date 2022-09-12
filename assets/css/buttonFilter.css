@@ -3,7 +3,7 @@
 }
 
 .btn-filter {
-  @apply text-black font-bold bg-grey-100 whitespace-no-wrap;
+  @apply text-black font-bold bg-grey-100;
 }
 
 .btn-filter:hover {

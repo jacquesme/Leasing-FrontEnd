@@ -1,14 +1,10 @@
 <template>
   <div class="login_container">
+    <page-caption />
     <div
-      class="bg-grey-100 flex justify-between items-center flex-wrap py-4 px-10"
+      class="grid grid-cols-1 pt-8 pb-16 gap-8 md:grid-cols-2 md:gap-4 px-8 md:py-32"
+      :class="{ hidden: recoveryModalIsVisible }"
     >
-      <h2 class="text-xl font-bold">LOG IN</h2>
-      <div class="text-xs text-grey-600">
-        <a href="#" class="">Main</a>
-      </div>
-    </div>
-    <div class="grid grid-cols-1 pt-8 pb-16 gap-8 md:grid-cols-2 md:gap-4 px-8 md:py-32" v-bind:class="{hidden:!isHidden}">
       <div class="col-span-1 border-2 border-grey-500 rounded p-4">
         <p class="text-sm font-black font-bold p-4">01. Login</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 pb-3 md:pb-2">
@@ -28,7 +24,11 @@
           </div>
         </div>
         <div class="flex justify-end px-4">
-          <a class="text-xs font-black cursor-pointer" @click="toggleClass()">Forgot password?</a>
+          <a
+            class="text-xs font-black cursor-pointer"
+            @click="showRecoveryModal()"
+            >Forgot password?</a
+          >
         </div>
         <div class="pt-4 px-4 pb-4 md:pt-0">
           <button class="btn btn-purple w-full md:w-40">Log in</button>
@@ -53,36 +53,43 @@
           </div>
         </div>
         <div class="pt-4 px-4 pb-4 md:pt-10px">
-          <button class="btn btn-purple w-full md:w-40 cursor-pointer">Registration</button>
+          <button class="btn btn-purple w-full md:w-40 cursor-pointer">
+            Registration
+          </button>
         </div>
       </div>
     </div>
-    <PasswordRecoveryModal v-bind:class="{ hidden: isHidden }"/>
+    <PasswordRecoveryModal
+      :class="{ hidden: !recoveryModalIsVisible }"
+      @close="closeRecoveryModal"
+    />
   </div>
 </template>
 <script>
+import pageCaption from "../components/allPages/pageCaption";
+
 import PasswordRecoveryModal from "../components/loginPage/PasswordRecoveryModal";
+
 export default {
-  components: {PasswordRecoveryModal},
+  components: { pageCaption, PasswordRecoveryModal },
   data() {
-    return{
-      isHidden: true,
+    return {
+      recoveryModalIsVisible: false,
     };
   },
   methods: {
-    toggleClass: function (event) {
-      this.isHidden = !this.isHidden;
-    }
-  }
-}
-
+    showRecoveryModal() {
+      this.recoveryModalIsVisible = true;
+    },
+    closeRecoveryModal() {
+      this.recoveryModalIsVisible = false;
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 .login_container {
-  height: 100vh;
-  @media (min-width: 768px) {
-    height: calc(100vh - 164px);
-  }
+  min-height: calc(100vh - 164px);
 }
 </style>
